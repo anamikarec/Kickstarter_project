@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:wght@300&family=STIX+Two+Text&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        /* <------------------------------Header---------------------------------> */
+
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            align-items: center;
+        }
+
+        .navLink a::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: rgb(255, 93, 18);
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .navLink a:hover::after {
+            width: 55%;
+            margin: auto;
+            margin-left: 0px;
+        }
+
+
+
+
+        #id1 {
+            grid-area: a1;
+        }
+
+        #id2 {
+            grid-area: a2;
+            margin-left: 5px;
+        }
+
+        #idk {
+            grid-area: ak;
+        }
+
+        #id3 {
+            grid-area: a3;
+        }
+
+        #id4 {
+            grid-area: a4;
+        }
+
+        #art {
+            grid-area: art;
+        }
+
+        #id5 {
+            grid-area: a5;
+        }
+
+        #id6 {
+            grid-area: a6;
+        }
+
+        #id7 {
+            grid-area: a7;
+        }
+
+        #id8 {
+            grid-area: a8;
+        }
+
+        #id9 {
+            grid-area: a9;
+        }
+
+        #id10 {
+            grid-area: a10;
+        }
+
+        #id11 {
+            grid-area: a11;
+        }
+
+        .subHeaderHr {
+            grid-area: hr;
+        }
+
+        .subHeaderHr2 {
+            grid-area: hr2;
+        }
+
+        .header>div {
+            font-family: 'Roboto', sans-serif;
+            padding: 5px;
+            color: rgb(104, 102, 102);
+            /* font-size: 10px; */
+        }
+
+        #idk {
+            text-align: center;
+            font-weight: 900;
+            font-size: 30px;
+            font-family: 'Anton', sans-serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(2, 204, 110);
+            font-size: 22px;
+        }
+
+        .noPrint {
+            visibility: hidden;
+        }
+
+        .header {
+            background-color: seashell;
+            display: grid;
+            grid-template-areas: 'a1 a2 . . . ak ak ak . . . a3 a4'
+                '. hr hr hr hr hr hr hr hr hr hr hr hr'
+                '. . . art a5 a6 a7 a8 a9 a10 a11 . . ';
+
+        }
+
+
+        @media screen and (max-width:800px) {
+            .header {
+                overflow: hidden;
+                grid-template-areas: '. . . ak ak ak . . .'
+                    'hr hr hr hr hr hr hr hr hr'
+                    'a1 a2 . . . . . a3 a4'
+                    'hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2'
+                    '. art a5 a6 a7 a8 a9 a10 a11';
+            }
+
+            .noPrint {
+                visibility: visible;
+            }
+
+        }
+
+        .header {
+            border-bottom: 2px solid rgb(201, 198, 198);
+        }
+
+
+        /* ----------------------------------------SECTION - 2 ----------------------------------------------*/
+
+        .section2 {
+            background-color: lavenderblush;
+            margin: 50px;
+            padding: 50px;
+            padding-left: 20px;
+            font-family: 'Oxygen', sans-serif;
+            font-size: 14px;
+        }
+
+        @media screen and (min-width:800px) {
+            #s2id2 {
+                float: left;
+            }
+
+            #s2id3 {
+                float: left;
+                margin-left: 20px;
+            }
+        }
+
+        .blue {
+            color: blue;
+        }
+
+
+        /* --------------------------------------- section3 ------------------------------------------------------*/
+
+        .layout {
+            background-color: cornsilk;
+            width: auto;
+            height: 600px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            border: 2px solid rgb(202, 198, 198);
+            border-left: none;
+            border-right: none;
+        }
+
+        .box1 {
+            margin-right: 25px;
+            margin-left: 50px;
+            height: 600px;
+            width: 40%;
+            float: left;
+        }
+
+        .box1 img {
+            height: 50%;
+            width: 100%;
+        }
+
+        .box2 {
+            /* background-color: white; */
+            color: black;
+            height: 150px;
+            width: 80%;
+            margin-left: 50px;
+            /* padding: 10px; */
+
+        }
+
+        .col {
+            height: 600px;
+            width: 50%;
+            float: left;
+        }
+
+        .box2 img {
+            /* height: 70%; */
+            /* height: 110px; */
+            height: 75%;
+            /* width: 60%; */
+            /* width: 120px; */
+            width: 40%;
+            float: left;
+            margin: 5px;
+            margin-right: 20px;
+        }
+
+        #remind-me {
+            height: 25px;
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+        .icons>div {
+            height: 18px;
+            width: 18px;
+            border-radius: 9px;
+            border: 1px solid grey;
+            float: left;
+            text-align: center;
+            /* color: white; */
+            /* background-color: black; */
+        }
+
+        .small-size {
+            font-size: 12px;
+        }
+
+        .flt-ryt {
+            float: right;
+            margin: 10px;
+            height: 18px;
+            width: 18px;
+            border-radius: 9px;
+            border: 1px solid grey;
+            /* float: left; */
+            text-align: center;
+
+        }
+
+        @media screen and (max-width:800px) {
+            .layout {
+                clear: both;
+                width: 100%;
+                height: 1080px;
+            }
+
+            .box1 {
+                width: auto;
+                margin-bottom: 5px;
+            }
+
+            .col {
+                margin-top: 0px;
+            }
+
+            .box2 {
+                width: 500px;
+                border-top: 2px solid rgb(235, 222, 111);
+                margin: 5px;
+            }
+
+            .box2 img {
+                height: 62%;
+            }
+        }
+
+        .icons {
+            float: left;
+        }
+
+        /* <------------------------------------section 4 ------------------------------------> */
+        .subscribe {
+            background-color: #fff0df;
+            clear: both;
+            /* background-color: chartreuse; */
+            height: 200px;
+            padding: 30px;
+            text-align: center;
+            font-family: 'STIX Two Text', serif;
+            border: 2px solid rgb(190, 184, 184);
+            border-left: none;
+            border-right: none;
+            
+        }
+
+        .mail-box {
+            width: 60%;
+            height: 45px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .mail-box div {
+            float: left;
+        }
+
+        #mail {
+            width: 70%;
+            height: 100%;
+        }
+
+        #mail input {
+            width: 100%;
+            height: 100%;
+        }
+
+        #submit {
+            width: 26%;
+            height: 45px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        #submit button {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        @media screen and (max-width:800px) {
+            
+        }
+        
+
+        /* <----------------------------------------SECTION 5 ---------------------------------------> */
+
+
+        .section5 {
+            height: 700px;
+            background-color: rgb(253, 247, 244);
+            /* background-color: hotpink; */
+            /* background-color:lightgoldenrodyellow; */
+        }
+
+        .explore {
+            height: 80px;
+            padding-top: 80px;
+            padding-left: 50px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            color: rgb(70, 68, 68);
+        }
+
+        .horizontal-line {
+            width: auto;
+            height: 2px;
+            background-color: rgb(248, 222, 209);
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .exploreBox {
+            height: 600px;
+            width: 20%;
+            /* background-color: hotpink; */
+            margin-left: 7%;
+            margin-top: 2%;
+            font-family: 'Roboto', sans-serif;
+            float: left;
+        }
+
+        .exploreBox img {
+            height: 30%;
+            width: 100%;
+        }
+
+        .sml {
+            height: 40px;
+            width: 80%;
+            margin: auto;
+            border: 0.1px solid rgb(61, 119, 228);
+            margin-top: 10px;
+            padding-top: 0px;
+            padding-bottom: 16px;
+            text-align: center;
+            border-radius: 5px;
+            overflow: visible;
+        }
+
+        #bg-blue {
+            background-color: rgb(81, 48, 228);
+            color: white;
+        }
+
+        .lblue {
+            background-color: rgb(168, 192, 243);
+        }
+
+        .mrgn-lft {
+            margin-left: 2%;
+        }
+
+        .shi {
+            font-size: 18px;
+        }
+
+        .pdlft {
+            padding-left: 5px;
+        }
+
+        .shi-font {
+            font-size: 14px;
+            font-family: 'Crimson Text', serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'STIX Two Text', serif;
+        }
+
+        @media screen and (max-width:800px) {
+            .exploreBox {
+                clear: both;
+            }
+
+            .section5 {
+                height: 1550px;
+            }
+
+            .exploreBox {
+                width: 50%;
+                height: 320px;
+                margin-left: 15%;
+                border-bottom: 2px solid rgb(238, 218, 180);
+            }
+        }
+
+        /* <----------------------------------------Section 6 -------------------------------------> */
+
+        .publish {
+            /* background-color:lightgoldenrodyellow; */
+            background-color: rgb(255, 237, 235);
+            margin: auto;
+            height: 360px;
+            /* width: 100%; */
+            /* border-top: 2px solid rgb(206, 203, 203); */
+            /* background-color: hotpink; */
+            /* margin-top: 110px; */
+            padding-top: 5%;
+        }
+
+        #publish_1{
+            width: 44%;
+            /* margin: 2%; */
+            float: left;
+            height: 96%;
+            padding-left: 15px;
+            /* height: 200px; */
+            /* background-color: lawngreen; */
+        }
+
+        #publish_1 img {
+            width: 90%;
+            margin: 2%;
+            float: left;
+            height: 60%;
+
+        }
+
+        #publish_3{
+            /* background-color: rgb(199, 24, 5); */
+            background-color: rgb(255, 237, 235);
+            width: 44%;
+            margin: 2%;
+            float: left;
+            padding-left: 20px;
+            border-left: 6px solid rgb(0, 128, 0);
+
+        }
+
+        @media screen and (max-width:800px) {
+            
+            #publish_1 {
+                width: 95%;
+            }
+
+            #publish_3 {
+                width: 95%;
+                /* margin: 3%; */
+            }
+
+            .publish {
+                height: 320px;
+                /* padding-top: 10px; */
+                margin-top: 10px;
+                /* margin-bottom: 200px; */
+            }
+
+            #publish_1 img {
+                height: 70%;
+
+            }
+        }
+
+        /* <-----------------------------------------section 7 ----------------------------------> */
+
+
+        .publish_sec {
+            height: 450px;
+            clear: both;
+            width: 92%;
+            margin: 4%;
+            margin-left: 6%;
+            margin-right: 4%;
+            border-top: 2px solid rgb(206, 203, 203);
+            margin-bottom: 50px;
+            padding-top: 50px;
+            background-color: rgb(255, 255, 234);
+            ;
+        }
+
+        .publishsec_1 {
+            width: 45%;
+            margin: 1%;
+            float: left;
+        }
+
+        .publishsec_1 div {
+            height: 220px;
+            padding-left: 15px;
+            border-left: 6px solid rgb(0, 128, 0);
+            background-color: rgb(241, 255, 255);
+            /* background-color: hotpink; */
+        }
+
+        .publish_sec img {
+            width: 98%;
+            margin: 1%;
+            height: 300px;
+        }
+
+        @media screen and (max-width:800px) {
+            .publishsec_1 {
+                width: 98%;
+            }
+
+            .publish_sec {
+                height: 600px;
+            }
+        }
+
+        /* <----------------------------------------- Section 8 ---------------------------------> */
+
+        .s7bold {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .common {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            background-color: rgb(252, 237, 249);
+            /* background-color: rgb(158, 7, 128); */
+            /* background-color: hsl(330, 100%, 99%); */
+            width: 100%;
+            /* margin: auto; */
+            height: 350px;
+            /* background-color: hotpink; */
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid rgb(216, 211, 211);
+            /* margin-bottom: 30px; */
+
+            /* background-color: hotpink; */
+        }
+
+        .common_row {
+            height: 150px;
+            width: 22%;
+            /* margin: auto; */
+            float: left;
+            padding: 1%;
+            /* margin-top: 30px; */
+            /* padding-bottom: 30px; */
+        }
+
+        .common_row img {
+            height: 100px;
+            width: 90%;
+        }
+
+        .common_row p {
+            font-size: 14px;
+        }
+
+
+        @media screen and (max-width:800px) {
+            .common_row {
+                height: 100px;
+                width: 95%;
+                padding: 2.5%;
+                margin-top: 0px;
+            }
+
+            .common_row img {
+                height: 120px;
+                width: 35%;
+                float: left;
+                padding-right: 15px;
+            }
+
+            .common_row div {
+                height: 100px;
+                width: 60%;
+                float: left;
+            }
+
+            .common {
+                height: 580px;
+                /* margin-top: 550px; */
+            }
+        }
+
+
+
+        /* <----------------------------------------SECTION 9 CSS------------------------------------> */
+
+
+        .creator {
+            clear: both;
+            width: 90%;
+            margin: auto;
+            border-top: 2px solid rgb(209, 204, 204);
+        }
+
+        .creator>h5 {
+            /* margin: 50px; */
+            padding: 15px;
+            margin-bottom: 5px;
+        }
+
+        .creator_div {
+            float: left;
+            width: 22%;
+            margin: 1%;
+            /* border: 2px solid red; */
+            height: 460px;
+        }
+
+        .creator_img {
+            height: 200px;
+            width: 100%;
+        }
+
+        .lil_font {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.445);
+        }
+
+        @media screen and (max-width:800px) {
+            .creator_div {
+                width: 45%;
+            }
+
+            .creator {
+                height: 480px;
+            }
+        }
+
+        /* --------------------------------------Section 10 ------------------------------------ */
+
+        .section-10 h4 {
+            padding: 30px;
+            border-top: 2px solid rgb(219, 215, 215);
+        }
+
+        .corner_creator {
+            height: 280px;
+            width: 96%;
+            margin: 2%;
+
+            /* background-color: brown; */
+        }
+
+        .crnr1 {
+            width: 45%;
+            height: 80%;
+            border: 1px solid rgb(219, 215, 215);
+            float: left;
+            margin: 2%;
+        }
+
+        .crnr1 img {
+            padding: 2%;
+            width: 40%;
+            height: 180px;
+            float: left;
+        }
+
+        .crnr1 div {
+            /* padding: 2%; */
+            width: 50%;
+            height: 180px;
+            float: left;
+        }
+
+        .s11blue {
+            color: rgb(89, 89, 241);
+            font-size: 14px;
+        }
+
+        @media screen and (max-width:800px) {
+            .crnr1 {
+                height: 200px;
+                width: 95%;
+            }
+
+            .corner_creator {
+                height: 500px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .crnr1 {
+                border: none;
+                border-top: 1px solid rgb(189, 186, 186);
+            }
+
+        }
+
+
+        /* <----------------------------------------FOOTER------------------------------------> */
+
+        /* .fcontainer{
+               margin-top: 500px;
+         } */
+
+        .frow1 {
+            height: 56px;
+            padding-top: 10px;
+            text-align: center;
+            border: 2px solid rgb(201, 197, 197);
+            border-top-color: gray;
+            border-left: none;
+            border-right: none;
+            background-color: rgb(255, 237, 235);
+            /* background-color: yellow; */
+        }
+
+        .r1elem1 {
+            float: left;
+            height: 40px;
+            width: 10%;
+            /* color: white; */
+            /* background-color: blue; */
+        }
+
+        #f1id1 {
+            margin-left: 10%;
+        }
+
+        #f1id2 {
+            margin-right: 10%;
+        }
+
+        @media screen and (max-width:800px) {
+            .frow1>.r1elem1 {
+                clear: both;
+                width: 100px;
+            }
+
+            #f1id1 {
+                margin-left: 0%;
+            }
+
+            .frow1 {
+                height: 320px;
+                /* background-color: rgb(255, 0, 0); */
+                /* border: none; */
+                border-left: none;
+                border-right: none;
+                border-top-color: gray;
+                margin-top: 380px;
+            }
+        }
+
+        .frow2 {
+            /* background-color: rgb(253, 246, 182); */
+            background-color: black;
+            color: rgb(223, 221, 221);
+            height: 240px;
+            /* background-color: turquoise; */
+        }
+
+        .footer-col {
+            float: left;
+            width: 24%;
+            line-height: 1;
+        }
+
+        #fcol1 {
+            margin-left: 14%;
+        }
+
+        #fcol2 {
+            margin-right: 14%;
+        }
+
+        @media screen and (max-width:800px) {
+            .frow2 {
+                height: 256px;
+                /* background-color: turquoise; */
+            }
+
+            /* .fcontainer{
+               margin-top: 450px;
+            }  */
+        }
+
+        .frow3 {
+            height: 56px;
+            /* background-color: rgb(253, 246, 182); */
+            background-color: black;
+            color: white;
+            /* background-color: violet; */
+            text-align: justify;
+            text-align: center;
+        }
+
+        .frow3>div {
+            float: left;
+        }
+
+        .fr3fcol1 {
+            width: 40%;
+            /* background-color:tomato; */
+            height: 44px;
+            text-align: left;
+            margin-left: 10%;
+        }
+
+        .icons {
+            width: 20%;
+            /* background-color: rgb(99, 64, 224); */
+        }
+
+        .icons i {
+            margin: 5%;
+        }
+
+        .dollar {
+            width: 30%;
+            /* background-color: thistle; */
+        }
+
+        .cntry {
+            width: 25%;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .cntry input {
+            width: 96%;
+            height: 40px;
+            border: 2px solid rgb(201, 199, 199);
+            border-radius: 0px;
+        }
+
+        .dlr {
+            width: 65%;
+            float: left;
+        }
+
+        .dlr input {
+            width: 60%;
+            height: 40px;
+            /* margin: 2%; */
+            border-radius: 0px;
+            border: 2px solid rgb(201, 199, 199);
+        }
+
+        @media screen and (max-width:800px) {
+            .frow3 {
+                height: 210px;
+            }
+
+            .frow3>div {
+                clear: both;
+            }
+
+            .dollar>div {
+                clear: both;
+            }
+
+            .fr3fcol1 {
+                width: 80%;
+                margin-left: 20%;
+            }
+
+            .icons {
+                width: 60%;
+                padding-left: 16%;
+                width: 150px;
+            }
+
+            .dollar {
+                width: 100%;
+                clear: both;
+                padding-left: px;
+            }
+
+            .dlr {
+                clear: both;
+                width: 100%;
+            }
+
+            .cntry {
+                clear: both;
+                width: 62%;
+                margin-left: 19%;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        }
+
+        .flRow {
+            background-color: rgb(248, 246, 246);
+            /* color: white; */
+            height: 56px;
+            /* background-color: yellow; */
+            width: 100%;
+            /* margin-left: 5%; */
+            /* border: 2px solid rgb(175, 47, 47); */
+            /* border-top-color: 2px solid rgb(126, 122, 122); */
+        }
+
+        .flRow>div {
+            float: left;
+            width: 15%;
+        }
+
+        .lrowcol {
+            text-align: center;
+        }
+
+        #bold {
+            border: 1px solid rgb(221, 215, 215);
+        }
+    </style>
+
+</head>
+
+<!------------------------------header -------------------------------------------------------->
+
+<section>
+    <div class="header">
+        <div id="id1" class="navLink">
+            <a>Discover</a>
+        </div>
+        <div id="id2" class="navLink">
+            <a href="startProjectFinalDraft.html">Start a Project</a>
+        </div>
+        <div id="idk">
+            <p>KICKSTARTER</p>
+        </div>
+
+        <div id="id3" class="navLink">
+            <a id="search"> Search <i class="fa fa-search" id="search"></i></a>
+        </div>
+        <div id="id4" class="navLink">
+            <a href="login.html">Log in</a>
+        </div>
+        <div class="subHeaderHr">
+            <hr>
+        </div>
+        <div class="subHeaderHr2 noPrint">
+            <hr>
+        </div>
+        <div id="art" class="navLink">
+            <a>Arts</a>
+        </div>
+        <div id="id5" class="navLink">
+            <a href="secondDraftOfProject.html">Comics & Illustration</a>
+        </div>
+        <div id="id6" class="navLink">
+            <a href="designTechFinalDraft.html">Design & Tech</a>
+        </div>
+        <div id="id7" class="navLink">
+            <a href="filmPageFinalDraft.html">Film</a>
+        </div>
+        <div id="id8" class="navLink">
+            <a>Food & craft</a>
+        </div>
+        <div id="id9" class="navLink">
+            <a>Games</a>
+        </div>
+        <div id="id10" class="navLink">
+            <a>Music</a>
+        </div>
+        <div id="id11" class="navLink">
+            <a href="publishingPageFinalDraft.html">Publishing</a>
+        </div>
+    </div>
+    <!-- <hr> -->
+</section>
+
+
+
+<!-- ----------------------------------section 2 ------------------------------------>
+
+<section class="section2">
+    <div id="s2id1">
+        <h1>Design & Tech</h1>
+        <p>From fine design to innovative tech, discover projects from creators working to build a more beautiful
+            future.</p>
+    </div>
+    <div class="blue" id="s2id2">Explore Design </div>
+    <div class="blue" id="s2id3">Explore Technology</div>
+</section>
+
+
+<!-- --------------------------------------section3 HTML------------------------------------------------------>
+
+
+<div class="layout">
+    <div class="box1" id="a1">
+        <h3 class="s3font">FEATURED PROJECT</h3>
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/236/049/4cc850181c101c04c0e23bdcbecda6f7_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1626506940&auto=format&frame=1&q=92&s=4bad17c65cd2d69364f798486c9092c0">
+        <h3>FerroPet: Dancing Ferrofluid Goo Lamp</h3>
+        <P>A tiny alien goo (Ferrofluid) that loves to dance and play, controlled by lights and electromagnets and
+            powered by USB</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="remind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="flt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+            </div>
+            <div class="flt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="box2" id="a3">
+            <h3 class="s3font">RECOMMENDED FOR YOU</h3>
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/512/216/4188258c3217cb994c4bf59c42ab8b49_original.jpg?ixlib=rb-4.0.2&amp;crop=faces&amp;w=560&amp;h=315&amp;fit=crop&amp;v=1628835683&amp;auto=format&amp;frame=1&amp;q=92&amp;s=1eda6bc8fb967a609b9c9f1d83d3ad7b&quot;);">
+            <p>Pre-order ROBOT MONSTER on 3-D Blu-ray</p>
+            <p class="small-size">By Bob Furmanek, 3-D Film Archive</p>
+            <div class="icons">
+                <div>
+                    <i class="fa fa-bookmark"></i>
+                </div>
+                <div>
+                    <i class="fa fa-thumbs-up"></i>
+                </div>
+                <div>
+                    <i class="fa fa-thumbs-down"></i>
+                </div>
+            </div>
+            <!-- <h5 class="round"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i> <i class="fa fa-bookmark"></i></h5> -->
+        </div>
+        <div class="box2" id="a4">
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/552/927/4ecb2c61ad4291753f1780b81059fa59_original.jpg?ixlib=rb-4.0.2&amp;crop=faces&amp;w=560&amp;h=315&amp;fit=crop&amp;v=1629210837&amp;auto=format&amp;frame=1&amp;q=92&amp;s=72a52ea5b0761ea24061ae87a415dbd1&quot;);">
+            <p>Hanging With Doctor Z: Season 2</p>
+            <p class="small-size">By Dana Gould</p>
+            <div class="icons">
+                <div>
+                    <i class="fa fa-bookmark"></i>
+                </div>
+                <div>
+                    <i class="fa fa-thumbs-up"></i>
+                </div>
+                <div>
+                    <i class="fa fa-thumbs-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box2" id="a5">
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/514/195/55bd6d7d17558d0a21ec0b23902ed1c9_original.jpg?ixlib=rb-4.0.2&amp;crop=faces&amp;w=560&amp;h=315&amp;fit=crop&amp;v=1628854946&amp;auto=format&amp;frame=1&amp;q=92&amp;s=95ce29d1e73833cbad9b89f40ff2ce87&quot;);">
+            <p>Alpha Betas Show - Powering the World with Video Games</p>
+            <p class="small-size">By 3BLACKDOT</p>
+            <div class="icons">
+                <div>
+                    <i class="fa fa-bookmark"></i>
+                </div>
+                <div>
+                    <i class="fa fa-thumbs-up"></i>
+                </div>
+                <div>
+                    <i class="fa fa-thumbs-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box2" id="a6">
+        </div>
+    </div>
+</div>
+<!-- <hr> -->
+<!-- <-----------------------------Section 4 HTML ---------------------------------- -->
+
+<section>
+    <div class="publish">
+        <div id="publish_1">
+            <img src="https://ksr-static.imgix.net/2x-kickstarter_x_ch-2100x900-ksr-collections-page-12128a4.jpg?ixlib=rb-2.1.0&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=c001ecd6795786598d114bcd33e5141d&quot;);"">
+            </div>
+            <div id="publish_3">
+            <h2>Kickstarter x Shop Cooper Hewitt</h2>
+            <p>We teamed up with the Smithsonian Design Museum's store to curate a few of our favorite campaigns that
+                went on to retail, from environmental tableware to toys that take flight.</p>
+            <p style="color: blue;">Shop our Cooper Hewitt Collab Page</p>
+        </div>
+    </div>
+</section>
+<!-- <-----------------------------Section 5 HTML ---------------------------------- -->
+
+
+<section class="section4">
+    <div class="subscribe">
+        <h1>See the future in your inbox.</h1>
+        <p>Sign up to receive Invent, Kickstarter’s Design and Tech newsletter.</p>
+        <div class="mail-box">
+            <div id="mail">
+                <input type="email" placeholder="Enter email address" style="font-size: 14px;">
+            </div>
+            <div id="submit">
+                <button style="font-size: 14px;">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- <--------------------------------------Section 6 HTML ----------------------------------------->
+
+<section class="section5">
+    <div class="section5">
+        <div class="explore">
+            <h1>Explore Design</h1>
+        </div>
+        <div class="horizontal-line">
+        </div>
+        <div class="flt-lft exploreBox">
+            <div class="sml" style="border: none;height: 5px;">
+
+            </div>
+            <div class="sml" id="bg-blue">
+                <p>Product Design</p>
+            </div>
+            <div class="sml lblue">
+                <p>Toy</p>
+            </div>
+            <div class="sml lblue">
+                <p>Graphic Design</p>
+            </div>
+            <div class="sml lblue">
+                <p>Architecture</p>
+            </div>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/588/886/cd8f6b17bd79b5461b4b7667982b918e_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629463805&auto=format&frame=1&q=92&s=f4376892db09f06614d3684c5b75406b">
+            <h2 class="shi pdlft">F.100 - the versatile everyday flashlight & power bank</h2>
+            <p class="pdlft shi-font">Billy's Tucci's classic is collected in this Premiere 488-pg. Full-Color Hardcover
+                Omnibus Edition!</p>
+            <h6 class="pdlft">By Chijoff+Co</h6>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/552/927/4ecb2c61ad4291753f1780b81059fa59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629210837&auto=format&frame=1&q=92&s=0f02d98727ae3bf92dc768f0af2e77a7">
+            <h2 class="shi pdlft">NutShell Coolers - Chill by Nature</h2>
+            <p class="pdlft shi-font">Cyberpunk Tokyo becomes s high tech battleground as Japan's deadliest bounty
+                hunters fight to claim the world's first sentient Mecha.</p>
+            <h6 class="pdlft">By Nutshell Coolers</h6>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/514/195/55bd6d7d17558d0a21ec0b23902ed1c9_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628854946&auto=format&frame=1&q=92&s=67dbb37410bb90be700537cba04dc1c0">
+            <h2 class="shi pdlft">Stainless Steel memobottle</h2>
+            <p class="pdlft shi-font">Haunted by her past, a disillusioned Iraq war veteran must survive the war-torn
+                land of Oz. From the writer of SPENCER & LOCKE</p>
+            <h6 class="pdlft">By memobottloe</h6>
+        </div>
+    </div>
+</section>
+
+
+<!-- <br>
+<br>
+<br>
+<br>
+<br>
+<br> -->
+<!-----------------------------------------------------section 7 HTML ----------------------------------->
+
+
+<section class="common" style="margin-top: 0px;">
+    <br>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/033/604/127/4d50ef6f64781ab513e9e91fb3c15ac9_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1621614481&auto=format&frame=1&q=92&s=e3175ca3cdabee6fd83d8c3b93dc2b0c">
+        <div>
+            <p class="s7bold">Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+            <p>New SF&F Anthologies from Zombies Need Brains!</p>
+            <p>By Joshua Palmatier</p>
+        </div>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/583/993/00c947633b41ddff44101d725d1168a8_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629420587&auto=format&frame=1&q=92&s=e49a7d5d1f962ecd96e6cfc854cc0934">
+        <p class="s7bold">The Art of Hand-Drawn Maps 1890</p>
+        <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
+        <p>By Alejandro Polanco</p>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/426/066/601366f0914def30b0bde99419eb9301_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628150660&auto=format&frame=1&q=92&s=1978ea8b9acec77f1a58863ac7ec018e">
+        <p class="s7bold">GÜRLZ - An artbook by Serge Birault</p>
+        <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two
+            stretch goals left!</p>
+        <p>By Spiridon</p>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/103/740/3ba2dec587aa73bfe1b07131a2e1581e_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1625430090&auto=format&frame=1&q=92&s=acf8818d04dc99d59f769298df978eec">
+        <p class="s7bold">Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+        <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
+        <p>By Lynne M. Thomasr</p>
+    </div>
+</section>
+
+
+
+<!----------------------------------- Section 8 ----------------------------------->
+
+<section class="common">
+    <br>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/514/195/55bd6d7d17558d0a21ec0b23902ed1c9_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628854946&auto=format&frame=1&q=92&s=67dbb37410bb90be700537cba04dc1c0">
+        <div>
+            <p class="s7bold">Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+            <p>New SF&F Anthologies from Zombies Need Brains!</p>
+            <p>By Joshua Palmatier</p>
+        </div>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/538/641/52e5d41e98fbe39b7688cae333bc83a8_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629111652&auto=format&frame=1&q=92&s=914211e191a2d1915779c874cf7ad334">
+        <p class="s7bold">The Art of Hand-Drawn Maps 1890</p>
+        <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
+        <p>By Alejandro Polanco</p>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/469/849/6ba35592d6c5e55b89e32ec2697fca4f_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628535579&auto=format&frame=1&q=92&s=ebe3d66e425722ffe1a448ed7b0b7c88">
+        <p class="s7bold">GÜRLZ - An artbook by Serge Birault</p>
+        <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two
+            stretch goals left!</p>
+        <p>By Spiridon</p>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/032/979/761/779c2b1aa4b62cfcbafef8a61d1a067a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1617396547&auto=format&frame=1&q=92&s=b5816fcb7e25daac262555187ccf5ea5">
+        <p class="s7bold">Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+        <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
+        <p>By Lynne M. Thomasr</p>
+    </div>
+</section>
+
+<br>
+
+<!-- --------------------------------- Section 9 ----------------------------------->
+<section class="common" style="margin-top: 0px;">
+    <br>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/565/319/e60ad9172e2b544be4c2ad7b6ed7dfce_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629293015&auto=format&frame=1&q=92&s=8bf0b3b8d532350572dd564bbf45d762">
+        <div>
+            <p class="s7bold">Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+            <p>New SF&F Anthologies from Zombies Need Brains!</p>
+            <p>By Joshua Palmatier</p>
+        </div>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/191/917/a791710d3b5f0dc2d8d7a4dff00897ef_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626180034&auto=format&frame=1&q=92&s=2c3775bfcc2ec5191ae207f3ed2044c5">
+        <p class="s7bold">The Art of Hand-Drawn Maps 1890</p>
+        <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
+        <p>By Alejandro Polanco</p>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/146/767/29c3f414ded51a2db3f4d6a2ea9cdb09_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1625765441&auto=format&frame=1&q=92&s=7f5b48c1d6a8b6d8759dcca3592f91f2">
+        <p class="s7bold">GÜRLZ - An artbook by Serge Birault</p>
+        <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two
+            stretch goals left!</p>
+        <p>By Spiridon</p>
+    </div>
+    <div class="common_row">
+        <img
+            src="https://ksr-ugc.imgix.net/assets/034/271/304/795be9e0a2569797a75a99969a5d3fbf_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626824817&auto=format&frame=1&q=92&s=743bc6530ef5d05fb6273e3fe44d6dae">
+        <p class="s7bold">Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+        <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
+        <p>By Lynne M. Thomasr</p>
+    </div>
+</section>
+
+
+
+<!-- ---------------------------------- section 10 ------------------------------------>
+<section class="section5">
+    <div class="section5">
+        <div class="explore">
+            <h1>Explore Design</h1>
+        </div>
+        <div class="horizontal-line">
+        </div>
+        <div class="flt-lft exploreBox">
+            <div class="sml" style="border: none;height: 5px;">
+
+            </div>
+            <div class="sml" id="bg-blue">
+                <p>Apps</p>
+            </div>
+            <div class="sml lblue">
+                <p>Gadgets</p>
+            </div>
+            <div class="sml lblue">
+                <p>Hardware</p>
+            </div>
+            <div class="sml lblue">
+                <p>Software</p>
+            </div>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/588/886/cd8f6b17bd79b5461b4b7667982b918e_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629463805&auto=format&frame=1&q=92&s=f4376892db09f06614d3684c5b75406b">
+            <h2 class="shi pdlft">F.100 - the versatile everyday flashlight & power bank</h2>
+            <p class="pdlft shi-font">Billy's Tucci's classic is collected in this Premiere 488-pg. Full-Color Hardcover
+                Omnibus Edition!</p>
+            <h6 class="pdlft">By Chijoff+Co</h6>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/552/927/4ecb2c61ad4291753f1780b81059fa59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629210837&auto=format&frame=1&q=92&s=0f02d98727ae3bf92dc768f0af2e77a7">
+            <h2 class="shi pdlft">NutShell Coolers - Chill by Nature</h2>
+            <p class="pdlft shi-font">Cyberpunk Tokyo becomes s high tech battleground as Japan's deadliest bounty
+                hunters fight to claim the world's first sentient Mecha.</p>
+            <h6 class="pdlft">By Nutshell Coolers</h6>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img
+                src="https://ksr-ugc.imgix.net/assets/034/514/195/55bd6d7d17558d0a21ec0b23902ed1c9_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628854946&auto=format&frame=1&q=92&s=67dbb37410bb90be700537cba04dc1c0">
+            <h2 class="shi pdlft">Stainless Steel memobottle</h2>
+            <p class="pdlft shi-font">Haunted by her past, a disillusioned Iraq war veteran must survive the war-torn
+                land of Oz. From the writer of SPENCER & LOCKE</p>
+            <h6 class="pdlft">By memobottloe</h6>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="creator">
+    <h5>MORE TO EXPLORE</h5>
+
+    <div class="float creator_div">
+        <img src="https://s3files.core77.com/blog/images/1135262_115274_105184_D2W0Aygt4.jpg" class="creator_img">
+        <p class="lil_font">Community engagement</p>
+        <p>Reviving ‘Wax Poetics,’ the cult magazine for long-form music journalism and vinyl culture</p>
+        <p>After the magazine closed down, longtime readers Alex Bruh and David Holt launched a campaign to rally an
+            existing and expanding community.</p>
+        <p class="lil_font">Read more</p>
+    </div>
+    <div class="float creator_div">
+        <img src="https://ksr-ugc.imgix.net/assets/032/184/915/f7ad20d2103e708b6965116ab3c6fd79_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1611957002&auto=format&frame=1&lossless=true&s=df9442d46614fd40e9b260af27473e67"
+            class="creator_img">
+        <p class="lil_font">Small business</p>
+        <p>How tarot creator Krystal Banner strengthens her intuition—and business—on Kickstarter</p>
+        <p>The all-or-nothing crowdfunding model can serve as a poll on what projects are worth her time.existing
+            and expanding community.</p>
+        <p class="lil_font">Read more</p>
+    </div>
+    <div class="float creator_div">
+        <img src="https://s3files.core77.com/blog/images/lead_n_spotlight/1120860_title__104029_yTQPrjxgd.jpg"
+            class="creator_img">
+        <p class="lil_font">Small press</p>
+        <p>Creators: Plan what you can, but prepare for twists and turns</p>
+        <p>This poet and printer wanted to engage the communities along the Columbia River. It didn’t go exactly as
+            planned, but their go-with-the-flow attitude brought them through.</p>
+        <p class="lil_font">Read more</p>
+    </div>
+    <div class="float creator_div">
+        <img src="https://s3files.core77.com/blog/images/1116794_115274_103711_pB58JLBXL.jpg" class="creator_img">
+        <p class="lil_font">Just-for-fun</p>
+        <p>Craighton Berman's advice for simple creative campaigns</p>
+        <p>This designer relies on big campaigns to build his independent practice. But here’s how he gives himself
+            a break—and new opportunities—with smaller campaigns.</p>
+        <p class="lil_font">Read more</p>
+    </div>
+</section>
+<br>
+<!-- <br>
+<br> -->
+
+<!-- --------------------------------- Setion 10 ----------------------------------->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- <hr> -->
+<br>
+<br>
+
+
+
+
+
+
+<br>
+
+<!-- --------------------------------- Section 12 ----------------------------------->
+<section class="section-10">
+    <h4>CREATORS' CORNER</h4>
+    <div class="corner_creator">
+        <div class="crnr1">
+            <img
+                src="https://ksr-static.imgix.net/creator_handbook-2f861a5.jpeg?ixlib=rb-2.1.0&amp;s=db586fa544dbb66ff7a4cbb312474b5d&quot;);">
+            <div>
+                <h3>Publishing Creator Tools</h3>
+                <p>Tips & tricks for planning, launching, and fulfilling your Publishing, Journalism, or Comics project.
+                </p>
+                <p class="s11blue">Watch now</p>
+            </div>
+        </div>
+        <div class="crnr1">
+            <img
+                src="https://ksr-static.imgix.net/TCI_storytelling-9fe71bf.png?ixlib=rb-2.1.0&amp;s=dca8c6b2fbb2d3d423ae9a9e2f11c165&quot;);">
+            <div>
+                <h3>The cost to create a book: ‘Derby Life’</h3>
+                <p>Margot Atwell shares how she budgeted to publish her Kickstarter-funded ode to roller derby.</p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+    </div>
+    <div class="corner_creator">
+        <div class="crnr1">
+            <img
+                src="https://ksr-static.imgix.net/snapmaker_1_million_in_7_minutes-4514471.jpeg?ixlib=rb-2.1.0&amp;s=dbff31f201cf1db0c2cad3bb5565b123&quot;);">
+            <div>
+                <h3>Publishing Creator Tools</h3>
+                <p>Tips & tricks for planning, launching, and fulfilling your Publishing, Journalism, or Comics project.
+                </p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+        <div class="crnr1">
+            <img
+                src="https://ksr-static.imgix.net/test_for_3D_printers-36e0cd3.png?ixlib=rb-2.1.0&amp;s=9af1a8a8fd772c7a02b70a5bc35e7812&quot;);">
+            <div>
+                <h3>The cost to create a book: ‘Derby Life’</h3>
+                <p>Margot Atwell shares how she budgeted to publish her Kickstarter-funded ode to roller derby.</p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------------------- Setion 11 ----------------------------------->
+<!-- 
+<br>
+    
+<br>
+<br> -->
+<!-- ----------------------------------Last Section ------------------------------------>
+
+<section class="publish_sec">
+    <div class="publishsec_1">
+        <img
+            src="https://ksr-static.imgix.net/1200x630-flex-d557b4d.png?ixlib=rb-2.1.0&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=15d876740a43f8e86ffe60eeeeca1eee&quot;);">
+        <div>
+            <h2>More than two million backers have pledged $200 million to publishing projects</h2>
+            <p>The category, which includes art books, literary spaces, zines, and more, is having its best-ever
+                year—and just hit a major milestone.</p>
+            <p style="color: blue;">Read more</p>
+        </div>
+    </div>
+    <div class="publishsec_1">
+        <img
+            src="https://ksr-static.imgix.net/Lights-On-Header-1000x-89118a8.jpg?ixlib=rb-2.1.0&amp;s=f3dd29c1e77e5f6efb2fa36a5fdae2b2&quot;);">
+        <div>
+            <h2>117 publishing projects showing what’s possible on Kickstarters</h2>
+            <p>Many authors come here to publish beautiful books, but we’ve also helped fund zines, literary spaces,
+                launch parties, podcasts, digital news outlets, and so much more.</p>
+            <p style="color: blue;">Read more</p>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!------------------------------------------------Footer------------------------------------------>
+
+<footer class="footer">
+    <div class="fcontainer">
+        <div class="frow1">
+            <div class="r1elem1" id="f1id1">Arts</div>
+            <div class="r1elem1">Comics & Illustration</div>
+            <div class="r1elem1">Design & Tech</div>
+            <div class="r1elem1">Film</div>
+            <div class="r1elem1">Food & Craft</div>
+            <div class="r1elem1">Games</div>
+            <div class="r1elem1">Music</div>
+            <div class="r1elem1" id="f1id2">Publishing</div>
+        </div>
+        <div class="frow2">
+            <div class="footer-col" id="fcol1">
+                <h4>ABOUT</h4>
+                <p>About Us</p>
+                <p>Our charter</p>
+                <p>Stats</p>
+                <p>Press</p>
+                <p>Jobs</p>
+            </div>
+            <div class="footer-col">
+                <h4>SUPPORT</h4>
+                <p>Help Center</p>
+                <p>Our Rules</p>
+                <p>Creator Reasources</p>
+                <p>Patrons</p>
+                <p>Brand assets</p>
+            </div>
+            <div class="footer-col" id="fcol2">
+                <h4>MORE FROM KICKSTARTER</h4>
+                <p>Newsletters</p>
+                <p>Kickstarter Magazine</p>
+                <p>The Creative Independent</p>
+                <p>Mobile apps</p>
+                <p>Research</p>
+            </div>
+        </div>
+
+        <div class="frow3">
+            <div class="fr3fcol1">
+                <p>Kickstarter, PBC © 2021</p>
+            </div>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="dollar">
+                <div class="cntry">
+                    <input type="text" placeholder="ENGLISH">
+                </div>
+                <div class="dlr">
+                    <input type="text" placeholder="$ US Dollar (USD)">
+                </div>
+            </div>
+        </div>
+
+        <hr id="bold">
+        <div class="flRow">
+            <div class="lrowcol">
+                <p>Trust & Safety</p>
+            </div>
+            <div class="lrowcol">
+                <p>Terms of Use</p>
+            </div>
+            <div class="lrowcol">
+                <p>Privacy Policy</p>
+            </div>
+            <div class="lrowcol">
+                <p> Cookie Policy</p>
+            </div>
+            <div class="lrowcol">
+                <p>Accessibility Statement</p>
+            </div>
+            <div class="lrowcol">
+                <p>CA Notice of Consent</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
