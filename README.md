@@ -1,15 +1,15 @@
 # kickstarter.com Clone By Team Hydrogen
 
-Masai School
+[Masai School](https://www.google.com/search?client=safari&rls=en&q=masai+school&ie=UTF-8&oe=UTF-8)
 
 Batch :PT-WEB-1
 Sources:
 
-Images: kickstarter website
+Images: [kickstarter](https://www.kickstarter.com)
 
-Fonts: Google Fonts
+Fonts: [Google Fonts](https://fonts.google.com)
 
-Icons:Font Awesome
+Icons: [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
 
 # Members and their Responsibility
 
