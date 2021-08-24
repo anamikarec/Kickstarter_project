@@ -1,0 +1,459 @@
+
+/* <------------------------------Header---------------------------------> */
+ 
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+  }
+
+.navLink a::after{
+content: '';
+width: 0%;
+height: 2px;
+background: rgb(255, 93, 18);
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+
+.navLink a:hover::after{
+width: 55%;
+margin: auto;
+margin-left: 0px;
+}
+
+
+
+
+
+
+#id1{
+grid-area: a1;
+}
+#id2{
+grid-area: a2;
+margin-left: 5px;
+}
+#idk{
+grid-area: ak;
+}
+#id3{
+grid-area: a3;
+}
+#id4{
+grid-area: a4;
+}
+#art{
+grid-area: art;
+}
+#id5{
+grid-area: a5;
+}
+#id6{
+grid-area: a6;
+}
+#id7{
+grid-area: a7;
+}
+#id8{
+grid-area: a8;
+}
+#id9{
+grid-area: a9;
+}
+#id10{
+grid-area: a10;
+}
+#id11{
+grid-area: a11;
+}
+.subHeaderHr{
+grid-area: hr;
+}
+.subHeaderHr2{
+grid-area: hr2;
+}
+.header > div{
+font-family: 'Roboto', sans-serif;
+padding: 5px;
+color: rgb(104, 102, 102);
+/* font-size: 10px; */
+}
+#idk{
+text-align: center;
+font-weight: 900;
+font-size: 30px;
+font-family: 'Anton', sans-serif;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: rgb(2, 204, 110);
+font-size: 22px;
+}
+
+.header{
+display: grid;
+grid-template-areas: 'a1 a2 . . . ak ak ak . . . a3 a4'
+                  'hr hr hr hr hr hr hr hr hr hr hr hr hr2'
+                  '. . . art a5 a6 a7 a8 a9 a10 a11 . . ';
+
+}
+
+@media screen and (max-width:800px){
+    .header{
+        overflow: hidden;
+        grid-template-areas: '. . . ak ak ak . . .'
+                             'hr hr hr hr hr hr hr hr hr'
+                             'a1 a2 . . . . . a3 a4'
+                             'hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2'
+                             '. art a5 a6 a7 a8 a9 a10 a11';
+    }
+}
+
+
+/* <----------------------------------------FOOTER------------------------------------> */
+
+/* .fcontainer{
+       margin-top: 500px;
+ } */
+
+.frow1{
+    height: 56px;
+    padding-top: 10px;
+    text-align: center;
+    border: 2px solid rgb(201, 197, 197);
+    border-top-color: gray;
+    border-left: none;
+    border-right: none;
+    background-color:rgb(255, 237, 235);
+    /* background-color: yellow; */
+}
+.r1elem1{
+    float: left;
+    height: 40px;
+    width: 10%;
+    /* color: white; */
+    /* background-color: blue; */
+}
+#f1id1{
+    margin-left: 10%;
+}
+#f1id2{
+    margin-right: 10%;
+}
+@media screen and (max-width:800px) {
+   .frow1 > .r1elem1{
+       clear: both;
+       width: 100px;
+   }
+   #f1id1{
+    margin-left: 0%;
+   }
+   .frow1{
+       height: 320px;
+       /* background-color: rgb(255, 0, 0); */
+       /* border: none; */
+       border-left: none;
+       border-right: none;
+       border-top-color: gray;
+   } 
+}
+.frow2{
+    background-color:rgb(253, 246, 182);
+    background-color: black;
+    color: rgb(223, 221, 221);
+    height: 240px;
+    /* background-color: turquoise; */
+}
+.footer-col{
+    float: left;
+    width: 24%;
+    line-height: 1;
+}
+#fcol1{
+    margin-left: 14%;
+}
+#fcol2{
+    margin-right: 14%;
+}
+@media screen and (max-width:800px) {
+    .frow2{
+       height: 256px;
+    /* background-color: turquoise; */
+   }
+   /* .fcontainer{
+       margin-top: 450px;
+    }  */
+}
+
+.frow3{
+    height:56px;
+    background-color:rgb(253, 246, 182);
+    background-color:black;
+    color: white;
+    /* background-color: violet; */
+    text-align: justify;
+    text-align: center;
+}
+.frow3 > div{
+    float: left;
+}
+.fr3fcol1{
+    width: 40%;
+    /* background-color:tomato; */
+    height: 44px;
+    text-align: left;
+    margin-left: 10%;
+}
+.icons{
+    width: 20%;
+    /* background-color: rgb(99, 64, 224); */
+}
+.icons i{
+    margin: 5%;
+}
+.dollar{
+    width: 30%;
+    /* background-color: thistle; */
+}
+.cntry{
+    width: 25%;
+    float: left;
+    margin-left: 10px;
+}
+.cntry input{
+    width: 96%;
+    height: 40px;
+    border: 2px solid rgb(201, 199, 199);
+    border-radius: 0px;
+}
+.dlr{
+    width: 65%;
+    float: left;
+}
+.dlr input{
+    width: 60%;
+    height: 40px;
+    /* margin: 2%; */
+    border-radius: 0px;
+    border: 2px solid rgb(201, 199, 199);
+}
+
+@media screen and (max-width:800px) {
+    .frow3{
+        height: 210px;
+    }
+    .frow3 > div{
+       clear: both;
+   }
+   .dollar > div{
+       clear: both;
+   }
+   .fr3fcol1{
+       width: 80%;
+       margin-left: 20%;
+   }
+   .icons{
+       width: 60%;
+       padding-left: 16%;
+       width: 150px;
+   }
+  .dollar{
+      width: 100%;
+      clear: both;
+      padding-left: px;
+  }
+  .dlr{
+      clear: both;
+      width: 100%;
+  }
+  .cntry{
+      clear: both;
+      width: 62%;
+      margin-left: 19%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+}
+
+.flRow{
+    background-color:rgb(248, 246, 246);
+    /* color: white; */
+    height: 56px;
+    /* background-color: yellow; */
+    width: 100%;
+    /* margin-left: 5%; */
+    /* border: 2px solid rgb(175, 47, 47); */
+    /* border-top-color: 2px solid rgb(126, 122, 122); */
+}
+.flRow > div {
+    float: left;
+    width: 15%;
+}
+.lrowcol{
+    text-align: center;
+}
+#bold{
+    border: 1px solid rgb(221, 215, 215);
+}
+
+
+/* ---------------------------------- Login Page CSS ------------------------------ */
+.loginPage{
+    height: 823px;
+    background-color: rgb(241, 241, 241);
+    padding-top: 70px;
+}
+.login{
+    height: 723px;
+    background-color: white;
+    margin: auto;
+    /* margin-bottom: 50px; */
+    width: 400px;
+    padding-top: 15px;
+}
+
+.boxes{
+    height: 40px;
+    background-color: white;
+    margin: 15px 25px 15px 25px;
+    width: 350px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#row1{
+    font-size: 30px;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#row2 input{
+    height: 100%;
+    width: 95%;
+    padding-left: 5%;
+    border: 1px solid rgb(233, 233, 233);
+}
+#row2 input{
+    font-size: 14px;
+}
+#row3 input{
+    height: 100%;
+    width: 95%;
+    padding-left: 5%;
+    border: 1px solid rgb(233, 233, 233);
+}
+#row3 input{
+    font-size: 14px;
+}
+
+#row4{
+    margin-left: 25px;
+    color: rgb(81, 81, 245);
+    color: rgb(209, 20, 20);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+#row5{
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    padding-top: .1px;
+    height: 50px;
+}
+#row6{
+    padding-top: 5px;
+    height: 25px;
+    font-weight: 300;
+}
+#row7{
+    height: 16px;
+} 
+#l1{
+    height: 2px;
+    background-color: rgb(233, 233, 233);
+    width: 160px;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+#c{
+    width: 30px;
+    height: 16px;
+    text-align: center;
+}
+#l2{
+    height: 2px;
+    background-color: rgb(233, 233, 233);
+    width: 160px;
+    margin-top: 8px;
+}
+.lines{
+    float: left;
+}
+#row8{
+    text-align: center;
+    padding-top: .5px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    height: 52px;
+    border-radius: 10px;
+}
+#row9{
+    text-align: center;
+    padding-top: .5px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: rgb(48, 54, 134);
+    color: white;
+    height: 52px;
+    border-radius: 10px;
+}
+
+#row10{
+    height: 90px;
+    margin-left: 25px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#row10 p+p{
+    line-height: 0;
+   font-size: 14px;
+   color: rgb(70, 110, 218);
+   font-weight: bold;
+}
+#row11{
+    height: 60px;
+    background-color: white;
+    /* border-left: 1px solid rgb(207, 203, 203); */
+    border-top: 1px solid rgb(233, 233, 233);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+#row11 > div{
+    width: 50%;
+    float: left;
+}
+#row11 > div{
+    text-align: right;
+}
+#row11 > div+div{
+    text-align: left;
+    color: rgb(63, 63, 253);
+}
+#row12{
+    height: 60px;
+    background-color: white;
+    border-top: 1px solid rgb(233, 233, 233);   
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+}
