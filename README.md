@@ -1,4 +1,4 @@
-kickstarter.com Clone By Team Hydrogen
+# kickstarter.com Clone By Team Hydrogen
 
 Masai School
 
@@ -11,7 +11,7 @@ Fonts: Google Fonts
 
 Icons:Font Awesome
 
-Members and their Responsibility
+# Members and their Responsibility
 
   Member_01: Anamika Gutpa (pw1_006) - Film Page, Start a project Page, Publishing Page,Creating a project repository and managing github.
 
