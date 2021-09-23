@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .frow1{
+            height: 56px;
+            padding-top: 10px;
+            text-align: center;
+            border: 2px solid rgb(207, 201, 201);
+            border-top-color: gray;
+            border-left: none;
+            border-right: none;
+            /* background-color: yellow; */
+        }
+        .r1elem1{
+            float: left;
+            height: 40px;
+            width: 10%;
+        }
+        #f1id1{
+            margin-left: 10%;
+        }
+        #f1id2{
+            margin-right: 10%;
+        }
+        @media screen and (max-width:600px) {
+           .frow1 > .r1elem1{
+               clear: both;
+               width: 100px;
+           }
+           #f1id1{
+            margin-left: 0%;
+           }
+           .frow1{
+               height: 320px;
+               /* border: none; */
+               border-left: none;
+               border-right: none;
+               border-top-color: gray;
+           } 
+        }
+        .frow2{
+            height: 240px;
+            /* background-color: turquoise; */
+        }
+        .footer-col{
+            float: left;
+            width: 24%;
+            line-height: 1;
+        }
+        #fcol1{
+            margin-left: 14%;
+        }
+        #fcol2{
+            margin-right: 14%;
+        }
+        @media screen and (max-width:600px) {
+            .frow2{
+               height: 256px;
+            /* background-color: turquoise; */
+           }
+        }
+        
+        .frow3{
+            height: 56px;
+            /* background-color: violet; */
+            text-align: justify;
+            text-align: center;
+        }
+        .frow3 > div{
+            float: left;
+        }
+        .fr3fcol1{
+            width: 40%;
+            /* background-color:tomato; */
+            height: 44px;
+            text-align: left;
+            margin-left: 10%;
+        }
+        .icons{
+            width: 20%;
+            /* background-color: rgb(99, 64, 224); */
+        }
+        .icons i{
+            margin: 5%;
+        }
+        .dollar{
+            width: 30%;
+            /* background-color: thistle; */
+        }
+        .cntry{
+            width: 25%;
+            float: left;
+            margin-left: 10px;
+        }
+        .cntry input{
+            width: 96%;
+            height: 40px;
+            border: 2px solid rgb(201, 199, 199);
+            border-radius: 0px;
+        }
+        .dlr{
+            width: 65%;
+            float: left;
+        }
+        .dlr input{
+            width: 60%;
+            height: 40px;
+            /* margin: 2%; */
+            border-radius: 0px;
+            border: 2px solid rgb(201, 199, 199);
+        }
+
+        @media screen and (max-width:600px) {
+            .frow3{
+                height: 210px;
+            }
+            .frow3 > div{
+               clear: both;
+           }
+           .dollar > div{
+               clear: both;
+           }
+           .fr3fcol1{
+               width: 97%;
+               margin-left: 3%;
+           }
+           .icons{
+               width: 60%;
+               padding-left: 0px;
+               width: 150px;
+           }
+          .dollar{
+              width: 100%;
+              clear: both;
+              padding-left: px;
+          }
+          .dlr{
+              clear: both;
+              width: 100%;
+          }
+          .cntry{
+              clear: both;
+              width: 63%;
+              margin-left: 18%;
+              margin-bottom: 10px;
+              margin-top: 10px;
+          }
+        }
+        
+        .flRow{
+            height: 56px;
+            /* background-color: yellow; */
+            width: 95%;
+            margin-left: 5%;
+            /* border: 2px solid rgb(175, 47, 47); */
+            /* border-top-color: 2px solid rgb(126, 122, 122); */
+        }
+        .flRow > div {
+            float: left;
+            width: 15%;
+        }
+        .lrowcol{
+            text-align: center;
+        }
+        #bold{
+            border: 1px solid rgb(221, 215, 215);
+        }
+    </style>
+</head>
+<body>
+    
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="frow1">
+                <div class="r1elem1" id="f1id1">Arts</div>
+                <div class="r1elem1">Comics & Illustration</div>
+                <div class="r1elem1">Design & Tech</div>
+                <div class="r1elem1">Film</div>
+                <div class="r1elem1">Food & Craft</div>
+                <div class="r1elem1">Games</div>
+                <div class="r1elem1">Music</div>
+                <div class="r1elem1" id="f1id2">Publishing</div>
+            </div>
+            <div class="frow2">
+                <div class="footer-col" id="fcol1">
+                    <h4>ABOUT</h4>
+                    <p>About Us</p>
+                    <p>Our charter</p>
+                    <p>Stats</p>
+                    <p>Press</p>
+                    <p>Jobs</p>
+                </div>
+                <div class="footer-col">
+                    <h4>SUPPORT</h4>
+                    <p>Help Center</p>
+                    <p>Our Rules</p>
+                    <p>Creator Reasources</p>
+                    <p>Patrons</p>
+                    <p>Brand assets</p>
+                </div>
+                <div class="footer-col" id="fcol2">
+                    <h4>MORE FROM KICKSTARTER</h4>
+                    <p>Newsletters</p>
+                    <p>Kickstarter Magazine</p>
+                    <p>The Creative Independent</p>
+                    <p>Mobile apps</p>
+                    <p>Research</p>
+                </div>
+            </div>
+
+            <div class="frow3">
+                <div class="fr3fcol1">
+                    <p>Kickstarter, PBC © 2021</p>
+                </div>
+                <div class="icons">
+                    <i class="fa fa-facebook" ></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin" ></i>
+                </div>
+                <div class="dollar">
+                    <div class="cntry">
+                        <input type="text" placeholder="ENGLISH">
+                    </div>
+                    <div class="dlr">
+                        <input type="text" placeholder="$ US Dollar (USD)">
+                    </div>
+                </div>
+            </div>
+
+        <hr id="bold">
+            <div class="flRow">
+                <div class="lrowcol">
+                    <p>Trust & Safety</p>
+                </div>
+                <div class="lrowcol">
+                    <p>Terms of Use</p>
+                </div>
+                <div class="lrowcol">
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="lrowcol">
+                    <p> Cookie Policy</p> 
+                </div>
+                <div class="lrowcol">
+                   <p>Accessibility Statement</p>
+                </div>
+                <div class="lrowcol">
+                    <p>CA Notice of Consent</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

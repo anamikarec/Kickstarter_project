@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Slider using Flickity Plugin | HackerRahul.com</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+  <style media="screen">
+  .carousel-cell {
+    width: 35%;
+    }
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+    }
+    .box1{
+        padding: 10px;
+        margin: 10px;
+    }
+    .box1 > img{
+        width: 100%;
+        /* height: 100px; */
+    }
+    .flt-ryt{
+        float: right;
+    }
+    .common{
+            width: 95%;
+            margin: auto;
+        }
+        .common_row{
+            height: 100px;
+            width: 20%;
+            margin: auto;
+            float: left;
+            padding: 25px;
+        }
+        .common_row img{
+            height: 100px;
+            width: 90%;
+        }
+        .common_row p{
+            font-size: 14px;
+        }
+
+        @media screen and (max-width:800px){
+        .common_row{
+            height: 100px;
+            width: 95%;
+        }
+        .common_row img{
+            height: 120px;
+            width: 35%;
+            float: left;
+            padding-right: 15px;
+        }
+        .common_row div{
+            height: 100px;
+            width: 60%;
+            float: left;
+        }
+        }
+    
+  </style>
+  <body>
+    <!-- <h1 class="w3-center">Simple Slider using Flickity Plugin By HACKERRAHUL</h1> -->
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+        <div class="common_row">
+            <img src="https://ksr-ugc.imgix.net/assets/034/309/932/5c7b1e4e77983b261dfb08798e1cc370_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627181601&auto=format&frame=1&q=92&s=713c249cc15b2b1d2d4a7772c1cd17e3">
+            <div>
+            <p>Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+            <p>New SF&F Anthologies from Zombies Need Brains!</p>
+            <p>By Joshua Palmatier</p>
+            </div>
+        </div>
+    </div>
+      <div class="carousel-cell">
+        <div class="common_row">
+            <img src="https://ksr-ugc.imgix.net/assets/034/475/836/2c210af45b93b3e5bd117a9a734a9698_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628585535&auto=format&frame=1&q=92&s=b7d39c85c88642f02434a9e3134b1d90">
+            <p>The Art of Hand-Drawn Maps 1890</p>
+            <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
+            <p>By Alejandro Polanco</p>
+        </div>
+    </div>
+      <div class="carousel-cell">
+        <div class="common_row">
+            <img src="https://ksr-ugc.imgix.net/assets/034/290/067/0477bc3180a397891d700b0345979c59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626974849&auto=format&frame=1&q=92&s=11987265f30b7cf13ee5cc5d8d16909b">
+            <p>GÜRLZ - An artbook by Serge Birault</p>
+            <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two stretch goals left!</p>
+            <p>By Spiridon</p>
+        </div>
+        </div>
+    </div>
+      <div class="carousel-cell">
+        <div class="common_row">
+            <img src="https://ksr-ugc.imgix.net/assets/034/335/301/767cfa8021ccd3ecb7ac456b55c56184_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627409986&auto=format&frame=1&q=92&s=f42a6680cdd677ad378bb79b79ea487d">
+            <p>Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+            <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have more stories to tell together!</p>
+            <p>By Lynne M. Thomasr</p>
+        </div>
+    </div>
+      <div class="carousel-cell">
+        <div class="box1" id="a1">
+            <h3 class="s3font">FEATURED PROJECT</h3>
+            <img src="https://ksr-ugc.imgix.net/assets/034/019/921/94d01a375635cefcfc2f19c55ec7d500_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1624740300&auto=format&frame=1&q=92&s=c283cbc99dc30337fa10c85fbadd21d5">
+            <h3>Ceres (a short film)</h3>
+            <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+            <p class="small-size">By Hannah Morrish</p>
+            <div>
+                <div id="remind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+                <div class="flt-ryt">
+                    <i class="fa fa-thumbs-up"></i>
+                 </div>
+                <div class="flt-ryt">
+                    <i class="fa fa-thumbs-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

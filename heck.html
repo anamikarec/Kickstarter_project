@@ -425,11 +425,8 @@
     .publish_sec{
         height: 400px;
             clear: both;
-            width: 92%;
-            margin:4%;
-            margin-left: 6%;
-            margin-right: 4%;
-            
+            width: 98%;
+            margin:1%;
             border-top: 2px solid rgb(206, 203, 203);
         }
         .publishsec_1{
@@ -438,10 +435,8 @@
             float: left;
         }
         .publishsec_1 div{
-            height: 220px;
             padding-left: 15px;
            border-left: 6px solid rgb(0, 128, 0);
-           /* background-color: hotpink; */
         }
 
         .publish_sec img{
@@ -461,101 +456,14 @@
 
 /* <----------------------------------------- Section 8 ---------------------------------> */
 
-
-   .common{
-        width: 95%;
-        margin: auto;
-        }
-        .common_row{
-            height: 100px;
-            width: 22%;
-            /* margin: auto; */
-            float: left;
-            padding: 1%;
-        }
-        .common_row img{
-            height: 100px;
-            width: 90%;
-        }
-        .common_row p{
-            font-size: 14px;
-        }
-
-
-        @media screen and (max-width:800px){
-            .common_row{
-                height: 100px;
-                width: 95%;
-                padding: 2.5%;
-            }
-            .common_row img{
-                height: 120px;
-                width: 35%;
-                float: left;
-                padding-right: 15px;
-            }
-            .common_row div{
-                height: 100px;
-                width: 60%;
-                float: left;
-           }
-           .common{
-               height: 580px;
-           }
-        }
-
-
-
-/* <----------------------------------------SECTION 9 CSS------------------------------------> */
-
-
-      .creator {
-            clear: both;
-            width: 90%;
-            margin: auto;
-            border-top: 2px solid rgb(209, 204, 204);
-          }
-        .creator > h5 {
-            /* margin: 50px; */
-            padding: 15px;
-            margin-bottom: 5px;
-        }
-
-        .creator_div {
-            float: left;
-            width: 22%;
-            margin: 1%;
-            /* border: 2px solid red; */
-            height: 460px;
-        }
-
-        .creator_img {
-            height: 200px;
-            width: 100%;
-        }
-
-        .lil_font {
-            font-size: 14px;
-            color: rgba(0, 0, 0, 0.445);
-        }
-
-        @media screen and (max-width:800px) {
-            .creator_div {
-                width: 45%;
-            }
-            .creator{
-                height: 480px;
-            }
-        }
-
-
 /* <----------------------------------------FOOTER------------------------------------> */
 
-        .fcontainer{
-               margin-top: 500px;
-         }
+.fcontainer{
+  margin-top: 500px;
+}
 
-        .frow1{
+     
+.frow1{
             height: 56px;
             padding-top: 10px;
             text-align: center;
@@ -721,6 +629,7 @@
         #bold{
             border: 1px solid rgb(221, 215, 215);
         }
+
 
 </style>
 
@@ -972,108 +881,268 @@
         </div>
 </section>
 
-<!----------------------------------- Section 8 ----------------------------------->
+<!-- --------------------------------- Section 8 ----------------------------------->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min">
+<style>
+    .carousel-cell {
+      width: 33%;
+      }
+      /* cell number */
+      .carousel-cell:before {
+        display: block;
+      }
+      .hox1{
+          padding: 10px;
+          margin: 2%;
+          width: 96%;
+      }
+      .hox1 > img{
+          width: 100%;
+          height: 30%;
+          /* height: 100px; */
+      }
+      #hsremind-me{
+              height: 40px;
+              width: 60%;
+              border: 0.5px solid rgb(173, 170, 170);
+              text-align: center;
+              border-radius: 3px;
+              padding-top: 5px;
+          }
+      .hsflt-ryt{
+          float: right;
+          margin: 10px;
+              height: 24px;
+              width: 24px;
+              border-radius: 12px;
+              border: 1px solid grey;
+              /* float: left; */
+              text-align: center;
+      }
+      .takeOff{
+          height: 80px;
+          padding-left: 15px;
+      }
+      #take{
+          float: left;
+          font-size: 16px;
+      }
+      #discover{
+          float: left;
+          padding-left: 15px;
+          color: rgb(58, 58, 236);
+          font-size: 12px;
+          padding-right: 15px;
+          padding-top: 8px;
+      }
+      @media screen and (max-width:800px) {
+          #discover{
+              float: right;
+          }
+      }
+    </style>
 
-<section class="common">
-    <div class="common_row">
-        <img src="https://ksr-ugc.imgix.net/assets/034/309/932/5c7b1e4e77983b261dfb08798e1cc370_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627181601&auto=format&frame=1&q=92&s=713c249cc15b2b1d2d4a7772c1cd17e3">
+<div class="takeOff">
+    <div id="take">
+        <p>TAKE OFF </p>
+    </div>
+    <div id="discover">
+        <p>Discover Now</p>
+    </div>
+</div>
+
+<div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+  <div class="carousel-cell">
+    <div class="hox1 w-image" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/079/614/804e4d8160e22458c98b2fe78878d6bc_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1625194152&auto=format&frame=1&q=92&s=1b708602edfb42a57280662b19f1dcb7">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
         <div>
-        <p>Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
-        <p>New SF&F Anthologies from Zombies Need Brains!</p>
-        <p>By Joshua Palmatier</p>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
         </div>
     </div>
-    <div class="common_row">
-        <img src="https://ksr-ugc.imgix.net/assets/034/475/836/2c210af45b93b3e5bd117a9a734a9698_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628585535&auto=format&frame=1&q=92&s=b7d39c85c88642f02434a9e3134b1d90">
-        <p>The Art of Hand-Drawn Maps 1890</p>
-        <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
-        <p>By Alejandro Polanco</p>
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/033/953/943/b35f8e8ba75d35263621355c998145f1_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1624237488&auto=format&frame=1&q=92&s=ff98fa0e53de15df375eadb1c20740d9">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
     </div>
-    <div class="common_row">
-        <img src="https://ksr-ugc.imgix.net/assets/034/290/067/0477bc3180a397891d700b0345979c59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626974849&auto=format&frame=1&q=92&s=11987265f30b7cf13ee5cc5d8d16909b">
-        <p>GÜRLZ - An artbook by Serge Birault</p>
-        <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two stretch goals left!</p>
-        <p>By Spiridon</p>
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/349/227/e8306e6ee7e86c7bec7f6d3fd22a8970_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627516355&auto=format&frame=1&q=92&s=ae6e27a09df92484f3f1b671ddb8bc96">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
     </div>
-    <div class="common_row">
-        <img src="https://ksr-ugc.imgix.net/assets/034/335/301/767cfa8021ccd3ecb7ac456b55c56184_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627409986&auto=format&frame=1&q=92&s=f42a6680cdd677ad378bb79b79ea487d">
-        <p>Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
-        <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
-        <p>By Lynne M. Thomasr</p>
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/416/161/20f9a7f12f6efecc9f026a5140413383_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628078091&auto=format&frame=1&q=92&s=11ea28a670420f371c71e00b6e532d2d">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
     </div>
-</section>
-
-<br>
-<br>
-<br>
-<br>
-
-<br><br>
-<br>
-<!-- --------------------------------- Section 9 ----------------------------------->
-<br><br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<section class="creator">
-    <h5>MORE TO EXPLORE</h5>
-
-    <div class="float creator_div">
-        <img src="https://cdn.filestackcontent.com/resize=width:200/RvqOA38WSCmDBu1D3aXf" class="creator_img">
-        <p class="lil_font">Community engagement</p>
-        <p>Reviving ‘Wax Poetics,’ the cult magazine for long-form music journalism and vinyl culture</p>
-        <p>After the magazine closed down, longtime readers Alex Bruh and David Holt launched a campaign to rally an
-            existing and expanding community.</p>
-        <p class="lil_font">Read more</p>
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/211/056/24ddcb2764682043d3615c4a98d036e3_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626301516&auto=format&frame=1&q=92&s=190cc86fe31159fbd352d263a906f300">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
     </div>
-    <div class="float creator_div">
-        <img src="https://cdn.filestackcontent.com/resize=width:200/fZXEI32QQIKK6nWJLUIG"
-            class="creator_img">
-        <p class="lil_font">Small business</p>
-        <p>How tarot creator Krystal Banner strengthens her intuition—and business—on Kickstarter</p>
-        <p>The all-or-nothing crowdfunding model can serve as a poll on what projects are worth her time.existing
-            and expanding community.</p>
-        <p class="lil_font">Read more</p>
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/479/877/6063400384245dc54846973cdbb744c2_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628607382&auto=format&frame=1&q=92&s=c1a18f35b2eb26991912446697cb328a">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
     </div>
-    <div class="float creator_div">
-        <img src="https://fcda83403961100baa63-6b75d3a70c699e63772caac69eefc7e8.ssl.cf5.rackcdn.com/Article472.jpg"
-            class="creator_img">
-        <p class="lil_font">Small press</p>
-        <p>Creators: Plan what you can, but prepare for twists and turns</p>
-        <p>This poet and printer wanted to engage the communities along the Columbia River. It didn’t go exactly as
-            planned, but their go-with-the-flow attitude brought them through.</p>
-        <p class="lil_font">Read more</p>
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/573/244/9ef846aa695561e3e38106aa4128ddab_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629344186&auto=format&frame=1&q=92&s=44b81adb150d9f9558c29282c4405d8a">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
     </div>
-    <div class="float creator_div">
-        <img src="https://cdn.filestackcontent.com/resize=width:200/mzPzGzytTj2Opn3enmf8" class="creator_img">
-        <p class="lil_font">Just-for-fun</p>
-        <p>Craighton Berman's advice for simple creative campaigns</p>
-        <p>This designer relies on big campaigns to build his independent practice. But here’s how he gives himself
-            a break—and new opportunities—with smaller campaigns.</p>
-        <p class="lil_font">Read more</p>
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/392/208/b2e3a82e58b24b6dbedb977083130f70_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627913085&auto=format&frame=1&q=92&s=01a256a8d0260ed87cb6535beb3d34b6">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
     </div>
-</section>
-<br>
-<br>
-<br>
-
-
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/019/921/94d01a375635cefcfc2f19c55ec7d500_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1624740300&auto=format&frame=1&q=92&s=c283cbc99dc30337fa10c85fbadd21d5">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/033/879/985/2225f534e7a7c96da56aa5dc7c1b2263_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1623658649&auto=format&frame=1&q=92&s=d3e98d009ad6cc1339ec0e8ec97fb571">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="carousel-cell">
+    <div class="hox1" id="a1">
+        <img src="https://ksr-ugc.imgix.net/assets/034/197/285/b240a4d83e2efffc771f530a5e427da8_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626205162&auto=format&frame=1&q=92&s=eb30faaa4c3a09af0379278540183b04">
+        <h3>Ceres (a short film)</h3>
+        <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+        <p class="small-size">By Hannah Morrish</p>
+        <div>
+            <div id="hsremind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+            <div class="hsflt-ryt">
+                <i class="fa fa-thumbs-down"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <!------------------------------------------------Footer------------------------------------------>
 
 <footer class="footer">

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+/* <------------------------------Header---------------------------------> */
+
+#idk{
+    text-align: center;
+    font-weight: 900;
+    /* font-size: 30px; */
+    font-family: 'Anton', sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(2, 204, 110);
+    font-size: 22px;
+}
+
+#id1{
+    grid-area: a1;
+}
+#id2{
+    grid-area: a2;
+    margin-left: 5px;
+}
+#idk{
+    grid-area: ak;
+}
+#id3{
+    grid-area: a3;
+}
+#id4{
+    grid-area: a4;
+}
+#art{
+    grid-area: art;
+}
+#id5{
+    grid-area: a5;
+}
+#id6{
+    grid-area: a6;
+}
+#id7{
+    grid-area: a7;
+}
+#id8{
+    grid-area: a8;
+}
+#id9{
+    grid-area: a9;
+}
+#id10{
+    grid-area: a10;
+}
+#id11{
+    grid-area: a11;
+}
+.subHeaderHr{
+    grid-area: hr;
+}
+.subHeader1 > div{
+    padding: 5px;
+}
+.subHeader1{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 'a1 a2 . . . . . . . . . . . . . . ak ak ak . . . . . . . . . . . . . . a3 a4';
+}
+
+.subHeader2 > div{
+    padding: 5px;
+}
+
+.subHeader2{
+    display: grid;
+    grid-template-areas: '. . . . art a5 a6 a7 a8 a9 a10 a11 . . . .';
+}
+.subHeader1{
+    height: 60px;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(102, 102, 102);
+}
+    
+.subHeader2{
+    height: 40px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(78, 78, 78);
+}
+.section1{
+    display: grid;
+}
+
+</style>
+
+</head>
+<body>
+    <!-- <section class="header"> -->
+    <section class="section1">
+        <!-- <div> -->
+            <div class="subHeader1">
+                <div id="id1">
+                    <p>Discover</p>
+            </div>
+            <div id="id2">
+                <p>Start a Project</p>
+            </div>
+            <div id="idk">
+                <p>KICKSTARTER</p>
+            </div>
+            
+            <div id="id3">
+                <p id="search"> Search <i class="fa fa-search" id="search"></i></p>
+            </div>
+            <div id="id4">
+                <p>Log in</p>
+            </div>
+            </div>
+            <div class="subHeaderHr">
+                <hr>
+            </div>
+            <div class="subHeader2">
+                    <div id="art">
+                        <p>Arts</p>
+                    </div>
+                    <div id="id5">
+                        <p>Comics & Illustration</p>
+                    </div>
+                    <div id="id6">
+                        <p>Design & Tech</p>
+                    </div>
+                    <div id="id7">
+                        <p>Film</p>
+                    </div>
+                    <div id="id8">
+                        <p>Food & craft</p>
+                    </div>
+                    <div id="id9">
+                        <p>Games</p>
+                    </div>
+                    <div id="id10">
+                        <p>Music</p>
+                    </div>
+                    <div id="id11">
+                        <p>Publishing</p>
+                    </div>
+                </div>
+            <hr>
+        </div>
+    </section>
+<hr>
+<section>
+    
+</section>
+
+</body>
+
+<script>
+    var parent = document.querySelector('section');
+    var search = document.getElementById('search');
+    var subHeader1 = document.querySelector('.subHeader1');
+    var subHeader2 = document.querySelector('.subHeaderHr');
+    function addSearchBox(){
+        var searchBox = document.createElement('input');
+        searchBox.placeholder = "Search for projects or categories";
+        parent.removeChild(subHeader1);
+        parent.insertBefore(searchBox,subHeader2);
+        searchBox.style.height='60px';
+        searchBox.style.width='100%';
+    }
+    search.addEventListener('click',addSearchBox);
+</script>
+</html>

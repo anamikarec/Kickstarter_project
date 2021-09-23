@@ -35,6 +35,38 @@
 
 
 /* <------------------------------Header---------------------------------> */
+
+
+
+
+         a{
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            align-items: center;
+          }
+
+        .navLink a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(255, 93, 18);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+
+    .navLink a:hover::after{
+        width: 55%;
+        margin: auto;
+        margin-left: 0px;
+     }
+
+
+
+
+
+
 #id1{
     grid-area: a1;
 }
@@ -255,10 +287,10 @@
         border-right: none;
     }
     .mail-box{
-        width: 40%;
+        width: 60%;
         height: 45px;
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     .mail-box div{
         float: left;
@@ -284,6 +316,27 @@
         color: white;
         border: none;
     }
+    /* @media screen and (max-width:800px) {
+        .mail-box div{
+           clear: both;
+           margin: 6px;
+        }
+        #mail{
+        width: 100%;
+        height: 100%;
+       }
+       #submit{
+        width: 100%;
+     }
+     .mail-box{
+        width: 80%;
+        height: 45px;
+        margin-left: 10%;
+        margin-right: 10%;
+     }
+     .subscribe{
+        height: 300px;
+    } */
 
     /* <----------------------------------------SECTION 5 ---------------------------------------> */
 
@@ -377,31 +430,33 @@
     .publish{
             margin: auto;
             height: 300px;
-            width: 100%;
+            /* width: 100%; */
             border-top: 2px solid rgb(206, 203, 203);
+            /* background-color: hotpink; */
+            margin-top: 110px;
         }
 
         #publish_1{
-            width: 45%;
+            width: 44%;
+            /* margin: 2%; */
+            float: left;
+            height: 96%;
+            padding-left: 15px;
+            /* height: 200px; */
+            /* background-color: lawngreen; */
+        }
+        #publish_1 img{
+            width: 90%;
             margin: 2%;
             float: left;
-            height: 100%;
+            height: 80%; 
+            
         }
-        #publish_1 > img{
-            width: 100%;
-            margin: 2%;
-            float: left;
-            height: 100%;
-        }
-        #publish_2{
-            width: 5%;
-            margin: 2%;
-            background-color: rgba(0, 128, 0, 0.157);
-            float: left;
-        }
+        
         #publish_3{
-            width: 40%;
-            margin: 1%;
+            /* background-color: lawngreen; */
+            width: 44%;
+            margin: 2%;
             float: left;
             padding-left: 20px;
             border-left: 6px solid rgb(0, 128, 0);
@@ -423,14 +478,15 @@
 
 
     .publish_sec{
-        height: 400px;
+        height: 450px;
             clear: both;
             width: 92%;
             margin:4%;
             margin-left: 6%;
             margin-right: 4%;
-            
             border-top: 2px solid rgb(206, 203, 203);
+            margin-bottom: 50px;
+            padding-top: 50px;
         }
         .publishsec_1{
             width: 45%;
@@ -465,13 +521,20 @@
    .common{
         width: 95%;
         margin: auto;
+        height: 300px;
+        /* background-color: hotpink; */
+        margin-top: 200px;
+        border-top: 2px solid rgb(216, 211, 211);
+        margin-bottom: 30px;
         }
         .common_row{
-            height: 100px;
+            height: 130px;
             width: 22%;
             /* margin: auto; */
             float: left;
             padding: 1%;
+            margin-top: 30px;
+            /* padding-bottom: 30px; */
         }
         .common_row img{
             height: 100px;
@@ -487,6 +550,7 @@
                 height: 100px;
                 width: 95%;
                 padding: 2.5%;
+                margin-top: 0px;
             }
             .common_row img{
                 height: 120px;
@@ -501,6 +565,7 @@
            }
            .common{
                height: 580px;
+               margin-top: 550px;
            }
         }
 
@@ -548,12 +613,62 @@
             }
         }
 
+        /* --------------------------------------Section 10 ------------------------------------ */
+
+        .section-10 h4{
+            padding: 30px;
+            border-top: 2px solid rgb(219, 215, 215);
+        }
+
+        .corner_creator{
+            height: 260px;
+            width: 96%;
+            margin: 2%;
+            /* background-color: brown; */
+        }
+        .crnr1{
+            width: 45%;
+            height: 80%;
+            border: 1px solid rgb(219, 215, 215);
+            float: left;
+            margin: 2%;
+        }
+        .crnr1 img{
+            padding: 2%;
+            width: 40%;
+            height: 180px;
+            float: left;
+        }
+        .crnr1 div{
+            /* padding: 2%; */
+            width: 50%;
+            height: 180px;
+            float: left;
+        }
+        .s11blue{
+            color: rgb(89, 89, 241);
+            font-size: 14px;
+        }
+
+        @media screen and (max-width:800px){
+            .crnr1{
+                height: 200px;
+                width: 95%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .crnr1{
+                border: none;
+                border-top: 1px solid rgb(189, 186, 186);
+            }
+        }
+
 
 /* <----------------------------------------FOOTER------------------------------------> */
 
-        .fcontainer{
+        /* .fcontainer{
                margin-top: 500px;
-         }
+         } */
 
         .frow1{
             height: 56px;
@@ -614,6 +729,9 @@
                height: 256px;
             /* background-color: turquoise; */
            }
+           .fcontainer{
+               margin-top: 450px;
+            } 
         }
         
         .frow3{
@@ -722,63 +840,68 @@
             border: 1px solid rgb(221, 215, 215);
         }
 
+
 </style>
 
 </head>
 
     <!------------------------------header -------------------------------------------------------->
-    <section >
-            <div class="header">
-                    <div id="id1">
-                        <p>Discover</p>
-                    </div>
-                    <div id="id2">
-                        <p>Start a Project</p>
-                    </div>
-                    <div id="idk">
-                        <p>KICKSTARTER</p>
-                    </div>
-                
-                    <div id="id3">
-                        <p id="search"> Search <i class="fa fa-search" id="search"></i></p>
-                    </div>
-                    <div id="id4">
-                        <p>Log in</p>
-                    </div>
-                    <div class="subHeaderHr">
-                        <hr>
-                    </div>
-                    <div class="subHeaderHr2">
-                        <hr>
-                    </div>
-                    <div id="art">
-                        <p>Arts</p>
-                    </div>
-                    <div id="id5">
-                        <p>Comics & Illustration</p>
-                    </div>
-                    <div id="id6">
-                        <p>Design & Tech</p>
-                    </div>
-                    <div id="id7">
-                        <p>Film</p>
-                    </div>
-                    <div id="id8">
-                        <p>Food & craft</p>
-                    </div>
-                    <div id="id9">
-                        <p>Games</p>
-                    </div>
-                    <div id="id10">
-                        <p>Music</p>
-                    </div>
-                    <div id="id11">
-                        <p>Publishing</p>
-                    </div>
-                </div>
-            <hr>
-    </section>
     
+    <section >
+        <div class="header">
+                <div id="id1" class="navLink">
+                    <a>Discover</a>
+                </div>
+                <div id="id2" class="navLink">
+                    <a>Start a Project</a>
+                </div>
+                <div id="idk">
+                    <p>KICKSTARTER</p>
+                </div>
+            
+                <div id="id3" class="navLink">
+                    <a id="search"> Search <i class="fa fa-search" id="search"></i></a>
+                </div>
+                <div id="id4" class="navLink">
+                    <a>Log in</a>
+                </div>
+                <div class="subHeaderHr">
+                    <hr>
+                </div>
+                <div class="subHeaderHr2">
+                    <hr>
+                </div>
+                <div id="art" class="navLink">
+                    <a>Arts</a>
+                </div>
+                <div id="id5" class="navLink">
+                    <a href="secondDraftOfProject.html">Comics & Illustration</a>
+                </div>
+                <div id="id6" class="navLink">
+                    <a href="designTechFinalDraft.html">Design & Tech</a>
+                </div>
+                <div id="id7" class="navLink">
+                    <a href="filmPageFinalDraft.html">Film</a>
+                </div>
+                <div id="id8" class="navLink">
+                    <a>Food & craft</a>
+                </div>
+                <div id="id9" class="navLink">
+                    <a>Games</a>
+                </div>
+                <div id="id10" class="navLink">
+                    <a>Music</a>
+                </div>
+                <div id="id11" class="navLink">
+                    <a href="publishingPageFinalDraft.html">Publishing</a>
+                </div>
+            </div>
+        <hr>
+</section>
+
+
+
+
     <section class="section2">
         <div id="s2id1">
             <h1>Comics & Illustration</h1>
@@ -935,12 +1058,11 @@
 
 <!-- <----------------------------------------------section 6 HTML------------------------------------------------>
 
-    <section class="publish">
-        <div>
+    <section >
+        <div class="publish">
             <div id="publish_1">
                 <img src="https://ksr-static.imgix.net/Screen_Shot_2021-03-15_at_5-52-36_PM-e9fa7b0.png?ixlib=rb-2.1.0&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=b3a7f462af461ec7b2276a460cec2e29">
             </div>
-            <div id="publish_2"></div>
             <div id="publish_3">
                 <h2>Kickstarter Publishing on Bookshop</h2>
                 <p>Browse a curated list of books, children's books, comic books, cookbooks, and more that were brought to life on Kickstarter and are now for sale through the traditional book trade. All commissions on purchases go to NYC Books Through Bars, an all-volunteer collective that sends free books to incarcerated people across the country.</p>
@@ -975,6 +1097,7 @@
 <!----------------------------------- Section 8 ----------------------------------->
 
 <section class="common">
+    <br>
     <div class="common_row">
         <img src="https://ksr-ugc.imgix.net/assets/034/309/932/5c7b1e4e77983b261dfb08798e1cc370_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627181601&auto=format&frame=1&q=92&s=713c249cc15b2b1d2d4a7772c1cd17e3">
         <div>
@@ -1003,33 +1126,10 @@
     </div>
 </section>
 
-<br>
-<br>
-<br>
-<br>
+<br> 
 
-<br><br>
-<br>
 <!-- --------------------------------- Section 9 ----------------------------------->
-<br><br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 <section class="creator">
     <h5>MORE TO EXPLORE</h5>
@@ -1070,9 +1170,150 @@
     </div>
 </section>
 <br>
+<!-- <br>
+<br> -->
+
+<!-- --------------------------------- Setion 10 ----------------------------------->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
+        <!-- <hr> -->
+<br>
+<br>
+<section class="common" style="margin-top: 0px;">
+    <br>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/309/932/5c7b1e4e77983b261dfb08798e1cc370_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627181601&auto=format&frame=1&q=92&s=713c249cc15b2b1d2d4a7772c1cd17e3">
+        <div>
+        <p>Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+        <p>New SF&F Anthologies from Zombies Need Brains!</p>
+        <p>By Joshua Palmatier</p>
+        </div>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/475/836/2c210af45b93b3e5bd117a9a734a9698_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628585535&auto=format&frame=1&q=92&s=b7d39c85c88642f02434a9e3134b1d90">
+        <p>The Art of Hand-Drawn Maps 1890</p>
+        <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
+        <p>By Alejandro Polanco</p>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/290/067/0477bc3180a397891d700b0345979c59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626974849&auto=format&frame=1&q=92&s=11987265f30b7cf13ee5cc5d8d16909b">
+        <p>GÜRLZ - An artbook by Serge Birault</p>
+        <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two stretch goals left!</p>
+        <p>By Spiridon</p>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/335/301/767cfa8021ccd3ecb7ac456b55c56184_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627409986&auto=format&frame=1&q=92&s=f42a6680cdd677ad378bb79b79ea487d">
+        <p>Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+        <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
+        <p>By Lynne M. Thomasr</p>
+    </div>
+</section>
+
+
+
+<!-- --------------------------------- Setion 11 ----------------------------------->
+<!-- 
+<br>
+    
+<br>
+<br> -->
+<br>
+<section class="common" style="margin-top: 0px;">
+    <br>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/309/932/5c7b1e4e77983b261dfb08798e1cc370_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627181601&auto=format&frame=1&q=92&s=713c249cc15b2b1d2d4a7772c1cd17e3">
+        <div>
+        <p>Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+        <p>New SF&F Anthologies from Zombies Need Brains!</p>
+        <p>By Joshua Palmatier</p>
+        </div>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/475/836/2c210af45b93b3e5bd117a9a734a9698_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628585535&auto=format&frame=1&q=92&s=b7d39c85c88642f02434a9e3134b1d90">
+        <p>The Art of Hand-Drawn Maps 1890</p>
+        <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
+        <p>By Alejandro Polanco</p>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/290/067/0477bc3180a397891d700b0345979c59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626974849&auto=format&frame=1&q=92&s=11987265f30b7cf13ee5cc5d8d16909b">
+        <p>GÜRLZ - An artbook by Serge Birault</p>
+        <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two stretch goals left!</p>
+        <p>By Spiridon</p>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/335/301/767cfa8021ccd3ecb7ac456b55c56184_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627409986&auto=format&frame=1&q=92&s=f42a6680cdd677ad378bb79b79ea487d">
+        <p>Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+        <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
+        <p>By Lynne M. Thomasr</p>
+    </div>
+</section>
+
+<br>
+<!-- --------------------------------- Section 10 ----------------------------------->
+<section class="section-10">
+    <h4>CREATORS' CORNER</h4>
+    <div class="corner_creator">
+        <div class="crnr1">
+                <img src="https://ksr-static.imgix.net/comiccon-c1c74ca.jpeg?ixlib=rb-4.0.2&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=1e91aa1b7fe854bcd38e41404fa108c9&quot;);">
+            <div>
+                <h3>Publishing Creator Tools</h3>
+                <p>Tips & tricks for planning, launching, and fulfilling your Publishing, Journalism, or Comics project.</p>
+                <p class="s11blue">Watch now</p>
+            </div>
+        </div>
+        <div class="crnr1">
+                <img src="https://ksr-static.imgix.net/publishing_resources-1a97d11.jpg?ixlib=rb-2.1.0&amp;s=962787eed7e302f333318c427c31194b">
+            <div>
+                <h3>The cost to create a book: ‘Derby Life’</h3>
+                <p>Margot Atwell shares how she budgeted to publish her Kickstarter-funded ode to roller derby.</p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+    </div>
+    <div class="corner_creator">
+        <div class="crnr1">
+                <img src="https://ksr-static.imgix.net/how_to_kickstart_a_comics_project-47a840f.png?ixlib=rb-2.1.0&amp;s=3178f468a8e5599271a360b4f9b5b361&quot;);">
+            <div>
+                <h3>Publishing Creator Tools</h3>
+                <p>Tips & tricks for planning, launching, and fulfilling your Publishing, Journalism, or Comics project.</p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+        <div class="crnr1">
+                <img src="https://ksr-static.imgix.net/TCI_storytelling-9fe71bf.png?ixlib=rb-2.1.0&amp;s=dca8c6b2fbb2d3d423ae9a9e2f11c165&quot;);">
+            <div>
+                <h3>The cost to create a book: ‘Derby Life’</h3>
+                <p>Margot Atwell shares how she budgeted to publish her Kickstarter-funded ode to roller derby.</p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!------------------------------------------------Footer------------------------------------------>
 
@@ -1158,7 +1399,6 @@
         </div>
     </div>
 </footer>
-
 </html>
 
 

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:wght@300&family=STIX+Two+Text&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+
+
+/* <------------------------------Header---------------------------------> */
+
+
+
+ 
+         a{
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            align-items: center;
+         }
+
+        .navLink a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(255, 93, 18);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+
+    .navLink a:hover::after{
+        width: 55%;
+        margin: auto;
+        margin-left: 0px;
+     }
+
+
+
+
+#id1{
+    grid-area: a1;
+}
+#id2{
+    grid-area: a2;
+    margin-left: 5px;
+}
+#idk{
+    grid-area: ak;
+}
+#id3{
+    grid-area: a3;
+}
+#id4{
+    grid-area: a4;
+}
+#art{
+    grid-area: art;
+}
+#id5{
+    grid-area: a5;
+}
+#id6{
+    grid-area: a6;
+}
+#id7{
+    grid-area: a7;
+}
+#id8{
+    grid-area: a8;
+}
+#id9{
+    grid-area: a9;
+}
+#id10{
+    grid-area: a10;
+}
+#id11{
+    grid-area: a11;
+}
+.subHeaderHr{
+    grid-area: hr;
+}
+.subHeaderHr2{
+    grid-area: hr2;
+}
+.header > div{
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    color: rgb(104, 102, 102);
+    /* font-size: 10px; */
+}
+#idk{
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(2, 204, 110);
+    font-size: 22px;
+}
+
+.header{
+    background-color:seashell;
+    display: grid;
+    grid-template-areas: 'a1 a2 . . . ak ak ak . . . a3 a4'
+                          'hr hr hr hr hr hr hr hr hr hr hr hr hr'
+                          '. . . art a5 a6 a7 a8 a9 a10 a11 . . ';
+    
+}
+
+@media screen and (max-width:800px){
+            .header{
+                grid-template-areas: '. . . ak ak ak . . .'
+                                     'hr hr hr hr hr hr hr hr hr'
+                                     'a1 a2 . . . . . a3 a4'
+                                     'hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2'
+                                     '. art a5 a6 a7 a8 a9 a10 a11';
+            }
+            .header{
+                height: 160px;
+            }
+        }
+
+
+
+
+
+
+/* <----------------------------------------FOOTER------------------------------------> */
+
+        /* .fcontainer{
+               margin-top: 500px;
+         } */
+
+        .frow1{
+            height: 56px;
+            padding-top: 10px;
+            text-align: center;
+            border: 2px solid rgb(201, 197, 197);
+            border-top-color: gray;
+            border-left: none;
+            border-right: none;
+            background-color:rgb(255, 237, 235);
+            /* background-color: yellow; */
+        }
+        .r1elem1{
+            float: left;
+            height: 40px;
+            width: 10%;
+            /* color: white; */
+            /* background-color: blue; */
+        }
+        #f1id1{
+            margin-left: 10%;
+        }
+        #f1id2{
+            margin-right: 10%;
+        }
+        @media screen and (max-width:800px) {
+           .frow1 > .r1elem1{
+               clear: both;
+               width: 100px;
+           }
+           #f1id1{
+            margin-left: 0%;
+           }
+           .frow1{
+               height: 320px;
+               /* background-color: rgb(255, 0, 0); */
+               /* border: none; */
+               border-left: none;
+               border-right: none;
+               border-top-color: gray;
+           } 
+        }
+        .frow2{
+            background-color:rgb(253, 246, 182);
+            background-color: black;
+            color: rgb(223, 221, 221);
+            height: 240px;
+            /* background-color: turquoise; */
+        }
+        .footer-col{
+            float: left;
+            width: 24%;
+            line-height: 1;
+        }
+        #fcol1{
+            margin-left: 14%;
+        }
+        #fcol2{
+            margin-right: 14%;
+        }
+        @media screen and (max-width:800px) {
+            .frow2{
+               height: 256px;
+            /* background-color: turquoise; */
+           }
+           /* .fcontainer{
+               margin-top: 450px;
+            }  */
+        }
+        
+        .frow3{
+            height:56px;
+            background-color:rgb(253, 246, 182);
+            background-color:black;
+            color: white;
+            /* background-color: violet; */
+            text-align: justify;
+            text-align: center;
+        }
+        .frow3 > div{
+            float: left;
+        }
+        .fr3fcol1{
+            width: 40%;
+            /* background-color:tomato; */
+            height: 44px;
+            text-align: left;
+            margin-left: 10%;
+        }
+        .icons{
+            width: 20%;
+            /* background-color: rgb(99, 64, 224); */
+        }
+        .icons i{
+            margin: 5%;
+        }
+        .dollar{
+            width: 30%;
+            /* background-color: thistle; */
+        }
+        .cntry{
+            width: 25%;
+            float: left;
+            margin-left: 10px;
+        }
+        .cntry input{
+            width: 96%;
+            height: 40px;
+            border: 2px solid rgb(201, 199, 199);
+            border-radius: 0px;
+        }
+        .dlr{
+            width: 65%;
+            float: left;
+        }
+        .dlr input{
+            width: 60%;
+            height: 40px;
+            /* margin: 2%; */
+            border-radius: 0px;
+            border: 2px solid rgb(201, 199, 199);
+        }
+
+        @media screen and (max-width:800px) {
+            .frow3{
+                height: 210px;
+            }
+            .frow3 > div{
+               clear: both;
+           }
+           .dollar > div{
+               clear: both;
+           }
+           .fr3fcol1{
+               width: 80%;
+               margin-left: 20%;
+           }
+           .icons{
+               width: 60%;
+               padding-left: 16%;
+               width: 150px;
+           }
+          .dollar{
+              width: 100%;
+              clear: both;
+              padding-left: px;
+          }
+          .dlr{
+              clear: both;
+              width: 100%;
+          }
+          .cntry{
+              clear: both;
+              width: 62%;
+              margin-left: 19%;
+              margin-bottom: 10px;
+              margin-top: 10px;
+          }
+        }
+        
+        .flRow{
+            background-color:rgb(248, 246, 246);
+            /* color: white; */
+            height: 56px;
+            /* background-color: yellow; */
+            width: 100%;
+            /* margin-left: 5%; */
+            /* border: 2px solid rgb(175, 47, 47); */
+            /* border-top-color: 2px solid rgb(126, 122, 122); */
+        }
+        .flRow > div {
+            float: left;
+            width: 15%;
+        }
+        .lrowcol{
+            text-align: center;
+        }
+        #bold{
+            border: 1px solid rgb(221, 215, 215);
+        }
+
+
+        /* ---------------------------------- Login Page CSS ------------------------------ */
+        .loginPage{
+            height: 823px;
+            background-color: rgb(241, 241, 241);
+            padding-top: 70px;
+        }
+        .login{
+            height: 723px;
+            background-color: white;
+            margin: auto;
+            /* margin-bottom: 50px; */
+            width: 400px;
+            padding-top: 15px;
+        }
+       
+        .boxes{
+            height: 40px;
+            background-color: white;
+            margin: 15px 25px 15px 25px;
+            width: 350px;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #row1{
+            font-size: 30px;
+            margin-left: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        #row2 input{
+            height: 100%;
+            width: 95%;
+            padding-left: 5%;
+            border: 1px solid rgb(233, 233, 233);
+        }
+        #row2 input{
+            font-size: 14px;
+        }
+        #row3 input{
+            height: 100%;
+            width: 95%;
+            padding-left: 5%;
+            border: 1px solid rgb(233, 233, 233);
+        }
+        #row3 input{
+            font-size: 14px;
+        }
+
+        #row4{
+            margin-left: 25px;
+            color: rgb(81, 81, 245);
+            color: rgb(209, 20, 20);
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+        }
+        #row5{
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-weight: 300;
+            padding-top: .1px;
+            height: 50px;
+        }
+        #row6{
+            padding-top: 5px;
+            height: 25px;
+            font-weight: 300;
+        }
+        #row7{
+            height: 16px;
+        } 
+        #l1{
+            height: 2px;
+            background-color: rgb(233, 233, 233);
+            width: 160px;
+            margin-top: 8px;
+            margin-left: 25px;
+        }
+        #c{
+            width: 30px;
+            height: 16px;
+            text-align: center;
+        }
+        #l2{
+            height: 2px;
+            background-color: rgb(233, 233, 233);
+            width: 160px;
+            margin-top: 8px;
+        }
+        .lines{
+            float: left;
+        }
+        #row8{
+            text-align: center;
+            padding-top: .5px;
+            font-size: 16px;
+            font-weight: 300;
+            background-color: black;
+            color: white;
+            height: 52px;
+            border-radius: 10px;
+        }
+        #row9{
+            text-align: center;
+            padding-top: .5px;
+            font-size: 16px;
+            font-weight: 300;
+            background-color: rgb(48, 54, 134);
+            color: white;
+            height: 52px;
+            border-radius: 10px;
+        }
+
+        #row10{
+            height: 90px;
+            margin-left: 25px;
+            margin-right: 15px;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
+        #row10 p+p{
+            line-height: 0;
+           font-size: 14px;
+           color: rgb(70, 110, 218);
+           font-weight: bold;
+        }
+        #row11{
+            height: 60px;
+            background-color: white;
+            /* border-left: 1px solid rgb(207, 203, 203); */
+            border-top: 1px solid rgb(233, 233, 233);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+        }
+        #row11 > div{
+            width: 50%;
+            float: left;
+        }
+        #row11 > div{
+            text-align: right;
+        }
+        #row11 > div+div{
+            text-align: left;
+            color: rgb(63, 63, 253);
+        }
+        #row12{
+            height: 60px;
+            background-color: white;
+            border-top: 1px solid rgb(233, 233, 233);   
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .noPrint{
+            visibility: hidden;
+        }
+
+
+
+
+
+</style>
+
+</head>
+
+    <!------------------------------header -------------------------------------------------------->
+    <section >
+            <div class="header">
+                    <div id="id1" class="navLink">
+                        <a>Discover</a>
+                    </div>
+                    <div id="id2" class="navLink">
+                        <a>Start a Project</a>
+                    </div>
+                    <div id="idk">
+                        <p onclick="gotoHomePage()">KICKSTARTER</p>
+                    </div>
+                
+                    <div id="id3" class="navLink">
+                        <a id="search"> Search <i class="fa fa-search" id="search"></i></a>
+                    </div>
+                    <div id="id4" class="navLink">
+                        <a href="login.html">Log in</a>
+                    </div>
+                    <div class="subHeaderHr">
+                        <hr>
+                    </div>
+                    <!-- <div class="subHeaderHr2">
+                        <hr>
+                    </div> -->
+                    <div id="art" class="navLink noPrint">
+                        <a>Arts</a>
+                    </div>
+                    <div id="id5" class="navLink noPrint">
+                        <a href="secondDraftOfProject.html">Comics & Illustration</a>
+                    </div>
+                    <div id="id6" class="navLink noPrint">
+                        <a href="designTechFinalDraft.html">Design & Tech</a>
+                    </div>
+                    <div id="id7" class="navLink noPrint">
+                        <a href="filmPageFinalDraft.html">Film</a>
+                    </div>
+                    <div id="id8" class="navLink noPrint">
+                        <a>Food & craft</a>
+                    </div>
+                    <div id="id9" class="navLink noPrint">
+                        <a>Games</a>
+                    </div>
+                    <div id="id10" class="navLink noPrint">
+                        <a>Music</a>
+                    </div>
+                    <div id="id11" class="navLink noPrint">
+                        <a href="publishingPageFinalDraft.html">Publishing</a>
+                    </div>
+                </div>
+            <!-- <hr> -->
+    </section>
+<!-- --------------------------------- Setion 2 ----------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="loginPage">
+    <div class="login">
+        <div id="row1">
+            <p>Log in</p>
+        </div>
+        <div class="boxes" id="row2">
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="boxes" id="row3">
+            <input type="text" placeholder="Password">
+        </div>
+        <div id="row4">
+            <p>Forgot your password?</p>
+        </div>
+        <div class="boxes" id="row5">
+            <p>Log in</p>
+        </div>
+        <div class="boxes" id="row6">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Remember me</label><br>
+        </div>
+        <div id="row7">
+             <div class="lines" id="l1"></div>
+             <div class="lines" id="c">or</div>
+             <div class="lines" id="l2"></div>
+        </div>
+        <div class="boxes" id="row8">
+            <p> <i class="fa fa-apple"></i> Sign in with Apple </p>
+        </div>
+        <div class="boxes" id="row9">
+            <p> <i class="fa fa-facebook-square"></i> Continue with Facebook</p>
+        </div>
+        <div id="row10">
+            <p>Get notified when your friends back and launch projects. We'll never post anything on Facebook without your permission. </p>
+            <p>Read more</p>
+        </div>
+        <div id="row11">
+            <div><p>New to Kickstarter?</p></div>
+            <div><p>Sign up</p></div>
+        </div>
+        <div id="row12">
+            <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------Footer------------------------------------------>
+
+<footer class="footer">
+    <div class="fcontainer">
+        <div class="frow1">
+            <div class="r1elem1" id="f1id1">Arts</div>
+            <div class="r1elem1">Comics & Illustration</div>
+            <div class="r1elem1">Design & Tech</div>
+            <div class="r1elem1">Film</div>
+            <div class="r1elem1">Food & Craft</div>
+            <div class="r1elem1">Games</div>
+            <div class="r1elem1">Music</div>
+            <div class="r1elem1" id="f1id2">Publishing</div>
+        </div>
+        <div class="frow2">
+            <div class="footer-col" id="fcol1">
+                <h4>ABOUT</h4>
+                <p>About Us</p>
+                <p>Our charter</p>
+                <p>Stats</p>
+                <p>Press</p>
+                <p>Jobs</p>
+            </div>
+            <div class="footer-col">
+                <h4>SUPPORT</h4>
+                <p>Help Center</p>
+                <p>Our Rules</p>
+                <p>Creator Reasources</p>
+                <p>Patrons</p>
+                <p>Brand assets</p>
+            </div>
+            <div class="footer-col" id="fcol2">
+                <h4>MORE FROM KICKSTARTER</h4>
+                <p>Newsletters</p>
+                <p>Kickstarter Magazine</p>
+                <p>The Creative Independent</p>
+                <p>Mobile apps</p>
+                <p>Research</p>
+            </div>
+        </div>
+
+        <div class="frow3">
+            <div class="fr3fcol1">
+                <p>Kickstarter, PBC © 2021</p>
+            </div>
+            <div class="icons">
+                <i class="fa fa-facebook" ></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin" ></i>
+            </div>
+            <div class="dollar">
+                <div class="cntry">
+                    <input type="text" placeholder="ENGLISH">
+                </div>
+                <div class="dlr">
+                    <input type="text" placeholder="$ US Dollar (USD)">
+                </div>
+            </div>
+        </div>
+
+    <hr id="bold">
+        <div class="flRow">
+            <div class="lrowcol">
+                <p>Trust & Safety</p>
+            </div>
+            <div class="lrowcol">
+                <p>Terms of Use</p>
+            </div>
+            <div class="lrowcol">
+                <p>Privacy Policy</p>
+            </div>
+            <div class="lrowcol">
+                <p> Cookie Policy</p> 
+            </div>
+            <div class="lrowcol">
+               <p>Accessibility Statement</p>
+            </div>
+            <div class="lrowcol">
+                <p>CA Notice of Consent</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+    function gotoHomePage(){
+
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

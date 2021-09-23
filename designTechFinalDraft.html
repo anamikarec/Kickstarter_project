@@ -35,6 +35,34 @@
 
 
 /* <------------------------------Header---------------------------------> */
+
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            align-items: center;
+         }
+
+        .navLink a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(255, 93, 18);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+
+    .navLink a:hover::after{
+        width: 55%;
+        margin: auto;
+        margin-left: 0px;
+     }
+
+
+
+
 #id1{
     grid-area: a1;
 }
@@ -99,6 +127,7 @@
 }
 
 .header{
+    background-color:seashell;
     display: grid;
     grid-template-areas: 'a1 a2 . . . ak ak ak . . . a3 a4'
                           'hr hr hr hr hr hr hr hr hr hr hr hr hr2'
@@ -121,6 +150,7 @@
 /* ----------------------------------------SECTION - 2 ----------------------------------------------*/
 
 .section2{
+    background-color: lavenderblush;
     margin: 50px;
     padding: 50px;
     padding-left: 20px;
@@ -144,7 +174,8 @@
 
 /* --------------------------------------- section3 ------------------------------------------------------*/
 
-.layout{
+        .layout{
+            background-color:cornsilk;  
             width: auto;
             height: 600px;
             font-family: 'Roboto', sans-serif;
@@ -220,12 +251,14 @@
             border: 1px solid grey;
             /* float: left; */
             text-align: center;
+            
         }
 
         @media screen and (max-width:800px){
            .layout{
                clear: both;
                width: 100%;
+               height: 1080px;
            }
            .box1{
                width: auto;
@@ -236,6 +269,11 @@
            }
            .box2{
                width: 500px;
+               border-top: 2px solid rgb(235, 222, 111);
+               margin: 5px;
+           }
+           .box2 img {
+               height: 62%;
            }
         }
         .icons{
@@ -244,6 +282,7 @@
         
         /* <------------------------------------section 4 ------------------------------------> */
     .subscribe{
+        background-color: #fff0df;
         clear: both;
         /* background-color: chartreuse; */
         height: 200px;
@@ -255,10 +294,10 @@
         border-right: none;
     }
     .mail-box{
-        width: 40%;
+        width: 60%;
         height: 45px;
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     .mail-box div{
         float: left;
@@ -284,13 +323,36 @@
         color: white;
         border: none;
     }
+    /* @media screen and (max-width:800px) {
+        .mail-box div{
+           clear: both;
+           margin: 6px;
+        }
+        #mail{
+        width: 100%;
+        height: 100%;
+       }
+       #submit{
+        width: 100%;
+     }
+     .mail-box{
+        width: 80%;
+        height: 45px;
+        margin-left: 10%;
+        margin-right: 10%;
+     }
+     .subscribe{
+        height: 300px;
+    } */
 
     /* <----------------------------------------SECTION 5 ---------------------------------------> */
 
 
         .section5{
-            height: 650px;
+            height: 700px;
             background-color: rgb(253, 247, 244);
+            /* background-color: hotpink; */
+            /* background-color:lightgoldenrodyellow; */
         }
         .explore{
             height: 80px;
@@ -366,45 +428,49 @@
                 width: 50%;
                 height: 320px;
                 margin-left: 15%;
-                border: 2px solid rgb(238, 218, 180);
-                border-left: none;
-                border-right: none;
+                border-bottom: 2px solid rgb(238, 218, 180);
             }
         }
 
 /* <----------------------------------------Section 6 -------------------------------------> */
 
     .publish{
+        /* background-color:lightgoldenrodyellow; */
+        background-color: rgb(255, 237, 235);
             margin: auto;
-            height: 300px;
-            width: 100%;
-            border-top: 2px solid rgb(206, 203, 203);
+            height: 360px;
+            /* width: 100%; */
+            /* border-top: 2px solid rgb(206, 203, 203); */
+            /* background-color: hotpink; */
+            /* margin-top: 110px; */
+            padding-top: 5%;
         }
 
         #publish_1{
-            width: 45%;
+            width: 44%;
+            /* margin: 2%; */
+            float: left;
+            height: 96%;
+            padding-left: 15px;
+            /* height: 200px; */
+            /* background-color: lawngreen; */
+        }
+        #publish_1 img{
+            width: 90%;
             margin: 2%;
             float: left;
-            height: 100%;
+            height: 60%; 
+            
         }
-        #publish_1 > img{
-            width: 100%;
-            margin: 2%;
-            float: left;
-            height: 100%;
-        }
-        #publish_2{
-            width: 5%;
-            margin: 2%;
-            background-color: rgba(0, 128, 0, 0.157);
-            float: left;
-        }
+        
         #publish_3{
-            width: 40%;
-            margin: 1%;
+            background-color: rgb(255, 237, 235);
+            width: 44%;
+            margin: 2%;
             float: left;
             padding-left: 20px;
             border-left: 6px solid rgb(0, 128, 0);
+
         }
         @media screen and (max-width:800px){
                     #publish_1{
@@ -412,25 +478,33 @@
                 } 
                 #publish_3{
                     width: 95%;
-                    margin: 3%;
+                    /* margin: 3%; */
                 }
                 .publish{
-                    height:420px;
+                    height:320px;
+                    /* padding-top: 10px; */
+                    margin-top: 10px;
                 }
+                #publish_1 img{
+                    height: 70%;
+
+               }
         }
 
 /* <-----------------------------------------section 7 ----------------------------------> */
 
 
     .publish_sec{
-        height: 400px;
+        height: 450px;
             clear: both;
             width: 92%;
             margin:4%;
             margin-left: 6%;
             margin-right: 4%;
-            
             border-top: 2px solid rgb(206, 203, 203);
+            margin-bottom: 50px;
+            padding-top: 50px;
+            background-color:rgb(255, 255, 234);;
         }
         .publishsec_1{
             width: 45%;
@@ -441,6 +515,7 @@
             height: 220px;
             padding-left: 15px;
            border-left: 6px solid rgb(0, 128, 0);
+           background-color: rgb(241, 255, 255);
            /* background-color: hotpink; */
         }
 
@@ -461,17 +536,36 @@
 
 /* <----------------------------------------- Section 8 ---------------------------------> */
 
+   .s7bold{
+      font-weight: bold;
+      font-size: 14px;
+    }
 
    .common{
-        width: 95%;
-        margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+       background-color: rgb(252, 237, 249);
+       /* background-color: rgb(158, 7, 128); */
+       /* background-color: hsl(330, 100%, 99%); */
+        width: 100%;
+        /* margin: auto; */
+        height: 350px;
+        /* background-color: hotpink; */
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 2px solid rgb(216, 211, 211);
+        /* margin-bottom: 30px; */
+        
+        /* background-color: hotpink; */
         }
         .common_row{
-            height: 100px;
+            height: 150px;
             width: 22%;
             /* margin: auto; */
             float: left;
             padding: 1%;
+            /* margin-top: 30px; */
+            /* padding-bottom: 30px; */
         }
         .common_row img{
             height: 100px;
@@ -487,6 +581,7 @@
                 height: 100px;
                 width: 95%;
                 padding: 2.5%;
+                margin-top: 0px;
             }
             .common_row img{
                 height: 120px;
@@ -501,6 +596,7 @@
            }
            .common{
                height: 580px;
+               /* margin-top: 550px; */
            }
         }
 
@@ -548,12 +644,67 @@
             }
         }
 
+        /* --------------------------------------Section 10 ------------------------------------ */
+
+        .section-10 h4{
+            padding: 30px;
+            border-top: 2px solid rgb(219, 215, 215);
+        }
+
+        .corner_creator{
+            height: 280px;
+            width: 96%;
+            margin: 2%;
+
+            /* background-color: brown; */
+        }
+        .crnr1{
+            width: 45%;
+            height: 80%;
+            border: 1px solid rgb(219, 215, 215);
+            float: left;
+            margin: 2%;
+        }
+        .crnr1 img{
+            padding: 2%;
+            width: 40%;
+            height: 180px;
+            float: left;
+        }
+        .crnr1 div{
+            /* padding: 2%; */
+            width: 50%;
+            height: 180px;
+            float: left;
+        }
+        .s11blue{
+            color: rgb(89, 89, 241);
+            font-size: 14px;
+        }
+
+        @media screen and (max-width:800px){
+            .crnr1{
+                height: 200px;
+                width: 95%;
+            }
+            .corner_creator{
+                height: 500px;
+            }
+        }
+        @media screen and (max-width:600px){
+            .crnr1{
+                border: none;
+                border-top: 1px solid rgb(189, 186, 186);
+            }
+           
+        }
+
 
 /* <----------------------------------------FOOTER------------------------------------> */
 
-        .fcontainer{
+        /* .fcontainer{
                margin-top: 500px;
-         }
+         } */
 
         .frow1{
             height: 56px;
@@ -563,12 +714,14 @@
             border-top-color: gray;
             border-left: none;
             border-right: none;
+            background-color:rgb(255, 237, 235);
             /* background-color: yellow; */
         }
         .r1elem1{
             float: left;
             height: 40px;
             width: 10%;
+            /* color: white; */
             /* background-color: blue; */
         }
         #f1id1{
@@ -592,9 +745,13 @@
                border-left: none;
                border-right: none;
                border-top-color: gray;
+               margin-top: 380px;
            } 
         }
         .frow2{
+            background-color:rgb(253, 246, 182);
+            background-color: black;
+            color: rgb(223, 221, 221);
             height: 240px;
             /* background-color: turquoise; */
         }
@@ -614,10 +771,16 @@
                height: 256px;
             /* background-color: turquoise; */
            }
+           /* .fcontainer{
+               margin-top: 450px;
+            }  */
         }
         
         .frow3{
             height:56px;
+            background-color:rgb(253, 246, 182);
+            background-color:black;
+            color: white;
             /* background-color: violet; */
             text-align: justify;
             text-align: center;
@@ -704,10 +867,12 @@
         }
         
         .flRow{
+            background-color:rgb(248, 246, 246);
+            /* color: white; */
             height: 56px;
             /* background-color: yellow; */
-            width: 95%;
-            margin-left: 5%;
+            width: 100%;
+            /* margin-left: 5%; */
             /* border: 2px solid rgb(175, 47, 47); */
             /* border-top-color: 2px solid rgb(126, 122, 122); */
         }
@@ -727,65 +892,70 @@
 </head>
 
     <!------------------------------header -------------------------------------------------------->
-    <section >
-            <div class="header">
-                    <div id="id1">
-                        <p>Discover</p>
-                    </div>
-                    <div id="id2">
-                        <p>Start a Project</p>
-                    </div>
-                    <div id="idk">
-                        <p>KICKSTARTER</p>
-                    </div>
-                
-                    <div id="id3">
-                        <p id="search"> Search <i class="fa fa-search" id="search"></i></p>
-                    </div>
-                    <div id="id4">
-                        <p>Log in</p>
-                    </div>
-                    <div class="subHeaderHr">
-                        <hr>
-                    </div>
-                    <div class="subHeaderHr2">
-                        <hr>
-                    </div>
-                    <div id="art">
-                        <p>Arts</p>
-                    </div>
-                    <div id="id5">
-                        <p>Comics & Illustration</p>
-                    </div>
-                    <div id="id6">
-                        <p>Design & Tech</p>
-                    </div>
-                    <div id="id7">
-                        <p>Film</p>
-                    </div>
-                    <div id="id8">
-                        <p>Food & craft</p>
-                    </div>
-                    <div id="id9">
-                        <p>Games</p>
-                    </div>
-                    <div id="id10">
-                        <p>Music</p>
-                    </div>
-                    <div id="id11">
-                        <p>Publishing</p>
-                    </div>
-                </div>
-            <hr>
-    </section>
     
+    <section >
+        <div class="header">
+                <div id="id1" class="navLink">
+                    <a>Discover</a>
+                </div>
+                <div id="id2" class="navLink">
+                    <a>Start a Project</a>
+                </div>
+                <div id="idk">
+                    <p>KICKSTARTER</p>
+                </div>
+            
+                <div id="id3" class="navLink">
+                    <a id="search"> Search <i class="fa fa-search" id="search"></i></a>
+                </div>
+                <div id="id4" class="navLink">
+                    <a>Log in</a>
+                </div>
+                <div class="subHeaderHr">
+                    <hr>
+                </div>
+                <div class="subHeaderHr2">
+                    <hr>
+                </div>
+                <div id="art" class="navLink">
+                    <a>Arts</a>
+                </div>
+                <div id="id5" class="navLink">
+                    <a href="secondDraftOfProject.html">Comics & Illustration</a>
+                </div>
+                <div id="id6" class="navLink">
+                    <a href="designTechFinalDraft.html">Design & Tech</a>
+                </div>
+                <div id="id7" class="navLink">
+                    <a href="filmPageFinalDraft.html">Film</a>
+                </div>
+                <div id="id8" class="navLink">
+                    <a>Food & craft</a>
+                </div>
+                <div id="id9" class="navLink">
+                    <a>Games</a>
+                </div>
+                <div id="id10" class="navLink">
+                    <a>Music</a>
+                </div>
+                <div id="id11" class="navLink">
+                    <a href="publishingPageFinalDraft.html">Publishing</a>
+                </div>
+            </div>
+        <hr>
+</section>
+
+    
+
+<!-- ----------------------------------section 2 ------------------------------------>
+ 
     <section class="section2">
         <div id="s2id1">
-            <h1>Comics & Illustration</h1>
-            <p>Explore fantastical worlds and original characters from Kickstarter’s community of comics creators and illustrators.</p>
+            <h1>Design & Tech</h1>
+            <p>From fine design to innovative tech, discover projects from creators working to build a more beautiful future.</p>
         </div>
-        <div class="blue" id="s2id2">Explore Comics </div>
-        <div class="blue" id="s2id3">Explore Illustration</div>
+        <div class="blue" id="s2id2">Explore Design </div>
+        <div class="blue" id="s2id3">Explore Technology</div>
     </section>
 
 
@@ -795,9 +965,9 @@
 <div class="layout">
     <div class="box1" id="a1">
             <h3 class="s3font">FEATURED PROJECT</h3>
-            <img src="https://ksr-ugc.imgix.net/assets/034/268/569/cd1ce3b6530e87983bab899eef063f01_original.jpg?ixlib=rb-4.0.2&amp;crop=faces&amp;w=1024&amp;h=576&amp;fit=crop&amp;v=1626807522&amp;auto=format&amp;frame=1&amp;q=92&amp;s=1dcfa5088a319243c71616a426961e43">
-            <h3>Ceres (a short film)</h3>
-            <P>Ceres is a film about mothers, daughters, regrowth, and the complexities of abuse.</P>
+            <img src="https://ksr-ugc.imgix.net/assets/034/236/049/4cc850181c101c04c0e23bdcbecda6f7_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1626506940&auto=format&frame=1&q=92&s=4bad17c65cd2d69364f798486c9092c0">
+            <h3>FerroPet: Dancing Ferrofluid Goo Lamp</h3>
+            <P>A tiny alien goo (Ferrofluid) that loves to dance and play, controlled by lights and electromagnets and powered by USB</P>
             <p class="small-size">By Hannah Morrish</p>
             <div>
                 <div id="remind-me" style="float: left;"><i class="fa fa-bookmark"></i> Remind me</div>
@@ -813,7 +983,7 @@
     <div class="col">
         <div class="box2" id="a3">
             <h3 class="s3font">RECOMMENDED FOR YOU</h3>
-            <img src="https://ksr-ugc.imgix.net/assets/034/470/407/ba649f6359645c942215a6cdb14688de_original.png?ixlib=rb-4.0.2&amp;crop=faces&amp;w=1024&amp;h=576&amp;fit=crop&amp;v=1628538634&amp;auto=format&amp;frame=1&amp;q=92&amp;s=8969d69639e21c3e423e216a84bbc44d">
+            <img src="https://ksr-ugc.imgix.net/assets/034/512/216/4188258c3217cb994c4bf59c42ab8b49_original.jpg?ixlib=rb-4.0.2&amp;crop=faces&amp;w=560&amp;h=315&amp;fit=crop&amp;v=1628835683&amp;auto=format&amp;frame=1&amp;q=92&amp;s=1eda6bc8fb967a609b9c9f1d83d3ad7b&quot;);">
             <p>Pre-order ROBOT MONSTER on 3-D Blu-ray</p>
             <p class="small-size">By Bob Furmanek, 3-D Film Archive</p>
             <div class="icons">
@@ -830,7 +1000,7 @@
             <!-- <h5 class="round"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i> <i class="fa fa-bookmark"></i></h5> -->
         </div>
         <div class="box2" id="a4">
-            <img src="https://ksr-ugc.imgix.net/assets/034/418/397/56d58cbc00b18c67b395da028139e947_original.png?ixlib=rb-4.0.2&amp;crop=faces&amp;w=560&amp;h=315&amp;fit=crop&amp;v=1628093209&amp;auto=format&amp;frame=1&amp;q=92&amp;s=c3b3d0eca577320cf06d7814e055c27c&quot;);">
+            <img src="https://ksr-ugc.imgix.net/assets/034/552/927/4ecb2c61ad4291753f1780b81059fa59_original.jpg?ixlib=rb-4.0.2&amp;crop=faces&amp;w=560&amp;h=315&amp;fit=crop&amp;v=1629210837&amp;auto=format&amp;frame=1&amp;q=92&amp;s=72a52ea5b0761ea24061ae87a415dbd1&quot;);">
             <p>Hanging With Doctor Z: Season 2</p>
             <p class="small-size">By Dana Gould</p>
             <div class="icons">
@@ -847,7 +1017,7 @@
         </div>
 
         <div class="box2" id="a5">
-            <img src="https://ksr-ugc.imgix.net/assets/034/416/161/20f9a7f12f6efecc9f026a5140413383_original.jpg?ixlib=rb-4.0.2&amp;crop=faces&amp;w=560&amp;h=315&amp;fit=crop&amp;v=1628078091&amp;auto=format&amp;frame=1&amp;q=92&amp;s=52041b7e792cd1ad18d282712594ac96&quot;);">
+            <img src="https://ksr-ugc.imgix.net/assets/034/514/195/55bd6d7d17558d0a21ec0b23902ed1c9_original.jpg?ixlib=rb-4.0.2&amp;crop=faces&amp;w=560&amp;h=315&amp;fit=crop&amp;v=1628854946&amp;auto=format&amp;frame=1&amp;q=92&amp;s=95ce29d1e73833cbad9b89f40ff2ce87&quot;);">
             <p>Alpha Betas Show - Powering the World with Video Games</p>
             <p class="small-size">By 3BLACKDOT</p>
             <div class="icons">
@@ -867,13 +1037,27 @@
     </div>
 </div>
     <!-- <hr> -->
+ <!-- <-----------------------------Section 4 HTML ---------------------------------- -->
 
-    <!-- <-----------------------------Section 4 HTML ---------------------------------- -->
+    <section >
+        <div class="publish">
+            <div id="publish_1">
+                <img src="https://ksr-static.imgix.net/2x-kickstarter_x_ch-2100x900-ksr-collections-page-12128a4.jpg?ixlib=rb-2.1.0&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=c001ecd6795786598d114bcd33e5141d&quot;);"">
+            </div>
+            <div id="publish_3">
+                <h2>Kickstarter x Shop Cooper Hewitt</h2>
+                <p>We teamed up with the Smithsonian Design Museum's store to curate a few of our favorite campaigns that went on to retail, from environmental tableware to toys that take flight.</p>
+                <p style="color: blue;">Shop our Cooper Hewitt Collab Page</p>
+            </div>
+        </div>
+    </section>
+    <!-- <-----------------------------Section 5 HTML ---------------------------------- -->
+
 
     <section class="section4">
         <div class="subscribe">
-                <h1>Discover the best and brightest projects on Kickstarter.</h1>
-                <h3>Sign up to receive our weekly Projects We Love newsletter.</h3>
+                <h1>See the future in your inbox.</h1>
+                <p>Sign up to receive Invent, Kickstarter’s Design and Tech newsletter.</p>
                 <div class="mail-box">
                     <div id="mail">
                         <input type="email" placeholder="Enter email address" style="font-size: 14px;">
@@ -886,12 +1070,12 @@
     </section>
 
 
-<!-- <--------------------------------------Section 5 HTML -----------------------------------------> 
+<!-- <--------------------------------------Section 6 HTML -----------------------------------------> 
 
 <section class="section5">
     <div class="section5">
         <div class="explore">
-             <h1>Explore Comics</h1>
+             <h1>Explore Design</h1>
         </div>
         <div class="horizontal-line">
         </div>
@@ -900,142 +1084,209 @@
                  
              </div>
              <div class="sml" id="bg-blue">
-                 <p>Comic Books</p>
+                 <p>Product Design</p>
              </div>
              <div class="sml lblue">
-                 <p>Graphic Novels</p>
+                 <p>Toy</p>
              </div>
              <div class="sml lblue">
-                 <p>Anthologies</p>
+                 <p>Graphic Design</p>
              </div>
              <div class="sml lblue">
-                 <p>Webcomics</p>
+                 <p>Architecture</p>
              </div>
         </div>
         <div class="flt-lft exploreBox mrgn-lft">
-              <img src="https://ksr-ugc.imgix.net/assets/034/211/056/24ddcb2764682043d3615c4a98d036e3_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626301516&auto=format&frame=1&q=92&s=190cc86fe31159fbd352d263a906f300">
-              <h2 class="shi pdlft">Shi: Omnibus Edition Vol. 1 Kickstarter Exclusive!</h2>
+            <img src="https://ksr-ugc.imgix.net/assets/034/588/886/cd8f6b17bd79b5461b4b7667982b918e_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629463805&auto=format&frame=1&q=92&s=f4376892db09f06614d3684c5b75406b">
+            <h2 class="shi pdlft">F.100 - the versatile everyday flashlight & power bank</h2>
               <p class="pdlft shi-font">Billy's Tucci's classic is collected in this Premiere 488-pg. Full-Color Hardcover Omnibus Edition!</p>
-              <h6 class="pdlft">By Billy Tucci and Crusade Fine Arts, Ltd.</h6>
+              <h6 class="pdlft">By Chijoff+Co</h6>
         </div>
         <div class="flt-lft exploreBox mrgn-lft">
-              <img src="https://ksr-ugc.imgix.net/assets/033/879/985/2225f534e7a7c96da56aa5dc7c1b2263_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1623658649&auto=format&frame=1&q=92&s=d3e98d009ad6cc1339ec0e8ec97fb571">
-              <h2 class="shi pdlft">Killtopia #4</h2>
-              <p class="pdlft shi-font">Cyberpunk Tokyo becomes s high tech battleground as Japan's deadliest bounty hunters fight to claim the world's first sentient Mecha.</p>
-              <h6 class="pdlft">By Dave Cook</h6>
+            <img src="https://ksr-ugc.imgix.net/assets/034/552/927/4ecb2c61ad4291753f1780b81059fa59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629210837&auto=format&frame=1&q=92&s=0f02d98727ae3bf92dc768f0af2e77a7">
+            <h2 class="shi pdlft">NutShell Coolers - Chill by Nature</h2>
+            <p class="pdlft shi-font">Cyberpunk Tokyo becomes s high tech battleground as Japan's deadliest bounty hunters fight to claim the world's first sentient Mecha.</p>
+            <h6 class="pdlft">By Nutshell Coolers</h6>
         </div>
         <div class="flt-lft exploreBox mrgn-lft">
-              <img src="https://ksr-ugc.imgix.net/assets/033/953/943/b35f8e8ba75d35263621355c998145f1_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1624237488&auto=format&frame=1&q=92&s=ff98fa0e53de15df375eadb1c20740d9">
-              <h2 class="shi pdlft">THE O.Z. #1-2 - A Fantasy Clasic Reimagined for Comics</h2>
+            <img src="https://ksr-ugc.imgix.net/assets/034/514/195/55bd6d7d17558d0a21ec0b23902ed1c9_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628854946&auto=format&frame=1&q=92&s=67dbb37410bb90be700537cba04dc1c0">
+            <h2 class="shi pdlft">Stainless Steel memobottle</h2>
               <p class="pdlft shi-font">Haunted by her past, a disillusioned Iraq war veteran must survive the war-torn land of Oz. From the writer of SPENCER & LOCKE</p>
-              <h6 class="pdlft">By David Pepose</h6>
+              <h6 class="pdlft">By memobottloe</h6>
         </div>
      </div>
 </section>
 
-<!-- <----------------------------------------------section 6 HTML------------------------------------------------>
 
-    <section class="publish">
-        <div>
-            <div id="publish_1">
-                <img src="https://ksr-static.imgix.net/Screen_Shot_2021-03-15_at_5-52-36_PM-e9fa7b0.png?ixlib=rb-2.1.0&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=b3a7f462af461ec7b2276a460cec2e29">
-            </div>
-            <div id="publish_2"></div>
-            <div id="publish_3">
-                <h2>Kickstarter Publishing on Bookshop</h2>
-                <p>Browse a curated list of books, children's books, comic books, cookbooks, and more that were brought to life on Kickstarter and are now for sale through the traditional book trade. All commissions on purchases go to NYC Books Through Bars, an all-volunteer collective that sends free books to incarcerated people across the country.</p>
-                <p style="color: blue;">Browse books</p>
-            </div>
-        </div>
-    </section>
-
-
-
+<!-- <br>
+<br>
+<br>
+<br>
+<br>
+<br> -->
 <!-----------------------------------------------------section 7 HTML ----------------------------------->
 
-<section class="publish_sec">
-    <div class="publishsec_1">
-        <img src="https://ksr-static.imgix.net/n8pNBqmfmywtx48eeufjXD-1024-80-db4553e.jpg?ixlib=rb-4.0.2&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=a60b790a13acf318acd832b3f6dcff00&quot;);">
-        <div>
-            <h2>More than two million backers have pledged $200 million to publishing projects</h2>
-            <p>The category, which includes art books, literary spaces, zines, and more, is having its best-ever year—and just hit a major milestone.</p>
-            <p style="color: blue;">Read more</p>
-        </div>
-    </div>
-    <div class="publishsec_1">
-        <img src="https://ksr-static.imgix.net/Kickstarter_Article_Art_1-9495b4b.png?ixlib=rb-2.1.0&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=95e76b4988087fa71e7f0b67be96c3c3&quot;);">
-        <div>
-            <h2>117 publishing projects showing what’s possible on Kickstarters</h2>
-            <p>Many authors come here to publish beautiful books, but we’ve also helped fund zines, literary spaces, launch parties, podcasts, digital news outlets, and so much more.</p>
-            <p style="color: blue;">Read more</p>
-        </div>
-        </div>
-</section>
 
-<!----------------------------------- Section 8 ----------------------------------->
-
-<section class="common">
+<section class="common" style="margin-top: 0px;">
+    <br>
     <div class="common_row">
-        <img src="https://ksr-ugc.imgix.net/assets/034/309/932/5c7b1e4e77983b261dfb08798e1cc370_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627181601&auto=format&frame=1&q=92&s=713c249cc15b2b1d2d4a7772c1cd17e3">
+        <img src="https://ksr-ugc.imgix.net/assets/033/604/127/4d50ef6f64781ab513e9e91fb3c15ac9_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1621614481&auto=format&frame=1&q=92&s=e3175ca3cdabee6fd83d8c3b93dc2b0c">
         <div>
-        <p>Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+        <p class="s7bold">Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
         <p>New SF&F Anthologies from Zombies Need Brains!</p>
         <p>By Joshua Palmatier</p>
         </div>
     </div>
     <div class="common_row">
-        <img src="https://ksr-ugc.imgix.net/assets/034/475/836/2c210af45b93b3e5bd117a9a734a9698_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628585535&auto=format&frame=1&q=92&s=b7d39c85c88642f02434a9e3134b1d90">
-        <p>The Art of Hand-Drawn Maps 1890</p>
+        <img src="https://ksr-ugc.imgix.net/assets/034/583/993/00c947633b41ddff44101d725d1168a8_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629420587&auto=format&frame=1&q=92&s=e49a7d5d1f962ecd96e6cfc854cc0934">
+        <p class="s7bold">The Art of Hand-Drawn Maps 1890</p>
         <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
         <p>By Alejandro Polanco</p>
     </div>
     <div class="common_row">
-        <img src="https://ksr-ugc.imgix.net/assets/034/290/067/0477bc3180a397891d700b0345979c59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626974849&auto=format&frame=1&q=92&s=11987265f30b7cf13ee5cc5d8d16909b">
-        <p>GÜRLZ - An artbook by Serge Birault</p>
+        <img src="https://ksr-ugc.imgix.net/assets/034/426/066/601366f0914def30b0bde99419eb9301_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628150660&auto=format&frame=1&q=92&s=1978ea8b9acec77f1a58863ac7ec018e">
+        <p class="s7bold">GÜRLZ - An artbook by Serge Birault</p>
         <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two stretch goals left!</p>
         <p>By Spiridon</p>
     </div>
     <div class="common_row">
-        <img src="https://ksr-ugc.imgix.net/assets/034/335/301/767cfa8021ccd3ecb7ac456b55c56184_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1627409986&auto=format&frame=1&q=92&s=f42a6680cdd677ad378bb79b79ea487d">
-        <p>Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+        <img src="https://ksr-ugc.imgix.net/assets/034/103/740/3ba2dec587aa73bfe1b07131a2e1581e_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1625430090&auto=format&frame=1&q=92&s=acf8818d04dc99d59f769298df978eec">
+        <p class="s7bold">Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
         <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
         <p>By Lynne M. Thomasr</p>
     </div>
 </section>
 
-<br>
-<br>
-<br>
-<br>
 
-<br><br>
-<br>
+
+<!----------------------------------- Section 8 ----------------------------------->
+
+<section class="common">
+    <br>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/514/195/55bd6d7d17558d0a21ec0b23902ed1c9_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628854946&auto=format&frame=1&q=92&s=67dbb37410bb90be700537cba04dc1c0">
+        <div>
+        <p class="s7bold">Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+        <p>New SF&F Anthologies from Zombies Need Brains!</p>
+        <p>By Joshua Palmatier</p>
+        </div>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/538/641/52e5d41e98fbe39b7688cae333bc83a8_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629111652&auto=format&frame=1&q=92&s=914211e191a2d1915779c874cf7ad334">
+        <p class="s7bold">The Art of Hand-Drawn Maps 1890</p>
+        <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
+        <p>By Alejandro Polanco</p>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/469/849/6ba35592d6c5e55b89e32ec2697fca4f_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628535579&auto=format&frame=1&q=92&s=ebe3d66e425722ffe1a448ed7b0b7c88">
+        <p class="s7bold">GÜRLZ - An artbook by Serge Birault</p>
+        <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two stretch goals left!</p>
+        <p>By Spiridon</p>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/032/979/761/779c2b1aa4b62cfcbafef8a61d1a067a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1617396547&auto=format&frame=1&q=92&s=b5816fcb7e25daac262555187ccf5ea5">
+        <p class="s7bold">Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+        <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
+        <p>By Lynne M. Thomasr</p>
+    </div>
+</section>
+
+<br> 
+
 <!-- --------------------------------- Section 9 ----------------------------------->
-<br><br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<section class="common" style="margin-top: 0px;">
+    <br>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/565/319/e60ad9172e2b544be4c2ad7b6ed7dfce_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629293015&auto=format&frame=1&q=92&s=8bf0b3b8d532350572dd564bbf45d762">
+        <div>
+        <p class="s7bold">Tales of SF&F Noir, upended Fairy Tales, & Brave New Worlds!</p>
+        <p>New SF&F Anthologies from Zombies Need Brains!</p>
+        <p>By Joshua Palmatier</p>
+        </div>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/191/917/a791710d3b5f0dc2d8d7a4dff00897ef_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626180034&auto=format&frame=1&q=92&s=2c3775bfcc2ec5191ae207f3ed2044c5">
+        <p class="s7bold">The Art of Hand-Drawn Maps 1890</p>
+        <p>A book that recovers the hand-drawn maps created by a forgotten 19th-century craftsman</p>
+        <p>By Alejandro Polanco</p>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/146/767/29c3f414ded51a2db3f4d6a2ea9cdb09_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1625765441&auto=format&frame=1&q=92&s=7f5b48c1d6a8b6d8759dcca3592f91f2">
+        <p class="s7bold">GÜRLZ - An artbook by Serge Birault</p>
+        <p>The new collection of Serge's warrior ladies, all in one big minimalistic book, up to 240 pages! Only two stretch goals left!</p>
+        <p>By Spiridon</p>
+    </div>
+    <div class="common_row">
+        <img src="https://ksr-ugc.imgix.net/assets/034/271/304/795be9e0a2569797a75a99969a5d3fbf_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1626824817&auto=format&frame=1&q=92&s=743bc6530ef5d05fb6273e3fe44d6dae">
+        <p class="s7bold">Uncanny Magazine Year 8: Fly to the Future, Space Unicorns!</p>
+        <p>Funding to support Year 8 of Hugo Award winning Uncanny Magazine. We have to tell together!</p>
+        <p>By Lynne M. Thomasr</p>
+    </div>
+</section>
+
+
+
+<!-- ---------------------------------- section 10 ------------------------------------>
+<section class="section5">
+    <div class="section5">
+        <div class="explore">
+             <h1>Explore Design</h1>
+        </div>
+        <div class="horizontal-line">
+        </div>
+        <div class="flt-lft exploreBox">
+             <div class="sml" style="border: none;height: 5px;">
+                 
+             </div>
+             <div class="sml" id="bg-blue">
+                 <p>Apps</p>
+             </div>
+             <div class="sml lblue">
+                 <p>Gadgets</p>
+             </div>
+             <div class="sml lblue">
+                 <p>Hardware</p>
+             </div>
+             <div class="sml lblue">
+                 <p>Software</p>
+             </div>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img src="https://ksr-ugc.imgix.net/assets/034/588/886/cd8f6b17bd79b5461b4b7667982b918e_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629463805&auto=format&frame=1&q=92&s=f4376892db09f06614d3684c5b75406b">
+            <h2 class="shi pdlft">F.100 - the versatile everyday flashlight & power bank</h2>
+              <p class="pdlft shi-font">Billy's Tucci's classic is collected in this Premiere 488-pg. Full-Color Hardcover Omnibus Edition!</p>
+              <h6 class="pdlft">By Chijoff+Co</h6>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img src="https://ksr-ugc.imgix.net/assets/034/552/927/4ecb2c61ad4291753f1780b81059fa59_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1629210837&auto=format&frame=1&q=92&s=0f02d98727ae3bf92dc768f0af2e77a7">
+            <h2 class="shi pdlft">NutShell Coolers - Chill by Nature</h2>
+            <p class="pdlft shi-font">Cyberpunk Tokyo becomes s high tech battleground as Japan's deadliest bounty hunters fight to claim the world's first sentient Mecha.</p>
+            <h6 class="pdlft">By Nutshell Coolers</h6>
+        </div>
+        <div class="flt-lft exploreBox mrgn-lft">
+            <img src="https://ksr-ugc.imgix.net/assets/034/514/195/55bd6d7d17558d0a21ec0b23902ed1c9_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1628854946&auto=format&frame=1&q=92&s=67dbb37410bb90be700537cba04dc1c0">
+            <h2 class="shi pdlft">Stainless Steel memobottle</h2>
+              <p class="pdlft shi-font">Haunted by her past, a disillusioned Iraq war veteran must survive the war-torn land of Oz. From the writer of SPENCER & LOCKE</p>
+              <h6 class="pdlft">By memobottloe</h6>
+        </div>
+     </div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
 <section class="creator">
     <h5>MORE TO EXPLORE</h5>
 
     <div class="float creator_div">
-        <img src="https://cdn.filestackcontent.com/resize=width:200/RvqOA38WSCmDBu1D3aXf" class="creator_img">
+        <img src="https://s3files.core77.com/blog/images/1135262_115274_105184_D2W0Aygt4.jpg" class="creator_img">
         <p class="lil_font">Community engagement</p>
         <p>Reviving ‘Wax Poetics,’ the cult magazine for long-form music journalism and vinyl culture</p>
         <p>After the magazine closed down, longtime readers Alex Bruh and David Holt launched a campaign to rally an
@@ -1043,7 +1294,7 @@
         <p class="lil_font">Read more</p>
     </div>
     <div class="float creator_div">
-        <img src="https://cdn.filestackcontent.com/resize=width:200/fZXEI32QQIKK6nWJLUIG"
+        <img src="https://ksr-ugc.imgix.net/assets/032/184/915/f7ad20d2103e708b6965116ab3c6fd79_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1611957002&auto=format&frame=1&lossless=true&s=df9442d46614fd40e9b260af27473e67"
             class="creator_img">
         <p class="lil_font">Small business</p>
         <p>How tarot creator Krystal Banner strengthens her intuition—and business—on Kickstarter</p>
@@ -1052,7 +1303,7 @@
         <p class="lil_font">Read more</p>
     </div>
     <div class="float creator_div">
-        <img src="https://fcda83403961100baa63-6b75d3a70c699e63772caac69eefc7e8.ssl.cf5.rackcdn.com/Article472.jpg"
+        <img src="https://s3files.core77.com/blog/images/lead_n_spotlight/1120860_title__104029_yTQPrjxgd.jpg"
             class="creator_img">
         <p class="lil_font">Small press</p>
         <p>Creators: Plan what you can, but prepare for twists and turns</p>
@@ -1061,7 +1312,7 @@
         <p class="lil_font">Read more</p>
     </div>
     <div class="float creator_div">
-        <img src="https://cdn.filestackcontent.com/resize=width:200/mzPzGzytTj2Opn3enmf8" class="creator_img">
+        <img src="https://s3files.core77.com/blog/images/1116794_115274_103711_pB58JLBXL.jpg" class="creator_img">
         <p class="lil_font">Just-for-fun</p>
         <p>Craighton Berman's advice for simple creative campaigns</p>
         <p>This designer relies on big campaigns to build his independent practice. But here’s how he gives himself
@@ -1070,9 +1321,127 @@
     </div>
 </section>
 <br>
+<!-- <br>
+<br> -->
+
+<!-- --------------------------------- Setion 10 ----------------------------------->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
+        <!-- <hr> -->
+<br>
+<br>
+
+
+
+
+
+
+<br>
+
+<!-- --------------------------------- Section 12 ----------------------------------->
+<section class="section-10">
+    <h4>CREATORS' CORNER</h4>
+    <div class="corner_creator">
+        <div class="crnr1">
+                <img src="https://ksr-static.imgix.net/creator_handbook-2f861a5.jpeg?ixlib=rb-2.1.0&amp;s=db586fa544dbb66ff7a4cbb312474b5d&quot;);">
+            <div>
+                <h3>Publishing Creator Tools</h3>
+                <p>Tips & tricks for planning, launching, and fulfilling your Publishing, Journalism, or Comics project.</p>
+                <p class="s11blue">Watch now</p>
+            </div>
+        </div>
+        <div class="crnr1">
+                <img src="https://ksr-static.imgix.net/TCI_storytelling-9fe71bf.png?ixlib=rb-2.1.0&amp;s=dca8c6b2fbb2d3d423ae9a9e2f11c165&quot;);">
+            <div>
+                <h3>The cost to create a book: ‘Derby Life’</h3>
+                <p>Margot Atwell shares how she budgeted to publish her Kickstarter-funded ode to roller derby.</p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+    </div>
+    <div class="corner_creator">
+        <div class="crnr1">
+                <img src="https://ksr-static.imgix.net/snapmaker_1_million_in_7_minutes-4514471.jpeg?ixlib=rb-2.1.0&amp;s=dbff31f201cf1db0c2cad3bb5565b123&quot;);">
+            <div>
+                <h3>Publishing Creator Tools</h3>
+                <p>Tips & tricks for planning, launching, and fulfilling your Publishing, Journalism, or Comics project.</p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+        <div class="crnr1">
+                <img src="https://ksr-static.imgix.net/test_for_3D_printers-36e0cd3.png?ixlib=rb-2.1.0&amp;s=9af1a8a8fd772c7a02b70a5bc35e7812&quot;);">
+            <div>
+                <h3>The cost to create a book: ‘Derby Life’</h3>
+                <p>Margot Atwell shares how she budgeted to publish her Kickstarter-funded ode to roller derby.</p>
+                <p class="s11blue">Read more</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------------------- Setion 11 ----------------------------------->
+<!-- 
+<br>
+    
+<br>
+<br> -->
+<!-- ----------------------------------Last Section ------------------------------------>
+
+<section class="publish_sec">
+    <div class="publishsec_1">
+        <img src="https://ksr-static.imgix.net/1200x630-flex-d557b4d.png?ixlib=rb-2.1.0&amp;auto=compress%2Cformat&amp;w=1000&amp;fit=min&amp;s=15d876740a43f8e86ffe60eeeeca1eee&quot;);">
+        <div>
+            <h2>More than two million backers have pledged $200 million to publishing projects</h2>
+            <p>The category, which includes art books, literary spaces, zines, and more, is having its best-ever year—and just hit a major milestone.</p>
+            <p style="color: blue;">Read more</p>
+        </div>
+    </div>
+    <div class="publishsec_1">
+        <img src="https://ksr-static.imgix.net/Lights-On-Header-1000x-89118a8.jpg?ixlib=rb-2.1.0&amp;s=f3dd29c1e77e5f6efb2fa36a5fdae2b2&quot;);">
+        <div>
+            <h2>117 publishing projects showing what’s possible on Kickstarters</h2>
+            <p>Many authors come here to publish beautiful books, but we’ve also helped fund zines, literary spaces, launch parties, podcasts, digital news outlets, and so much more.</p>
+            <p style="color: blue;">Read more</p>
+        </div>
+        </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <!------------------------------------------------Footer------------------------------------------>
 
@@ -1158,7 +1527,6 @@
         </div>
     </div>
 </footer>
-
 </html>
 
 
